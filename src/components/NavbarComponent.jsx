@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="w-96 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
-                src="src/assets/ICS-Logo.png"
+                src="./../assets/ICS-Logo.png"
                 alt="logo"
                 className="dark:hidden w-80 sm:max-w-fit"
               />
