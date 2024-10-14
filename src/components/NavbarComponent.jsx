@@ -49,7 +49,7 @@ const Navbar = () => {
                 </ul>
               </nav>
             </div>
-            <div className="hidden justify-end pr-16 sm:flex lg:pr-0 whitespace-nowrap sm:whitespace-pre-wrap">
+            <div className="hidden justify-end pr-16 sm:flex lg:pr-0 whitespace-nowrap sm:whitespace-pre-wrap md:whitespace-nowrap">
               <a
                 href="/#"
                 className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white"
