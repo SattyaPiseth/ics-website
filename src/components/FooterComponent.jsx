@@ -14,12 +14,12 @@ const Footer = () => {
                   className="mb-6 inline-block max-w-80 mx-auto sm:mx-0"
                 >
                   <img
-                    src="./../assets/ICS-Logo.png"
+                    src="src\assets\ICS-Logo.png"
                     alt="logo"
                     className="max-w-full dark:hidden h-auto"
                   />
                   <img
-                    src="./../assets/ICS-Logo.png"
+                    src="src\assets\ICS-Logo.png"
                     alt="logo"
                     className="max-w-full hidden dark:block h-auto"
                   />
@@ -28,7 +28,7 @@ const Footer = () => {
                   Sed ut perspiciatis undmnis is iste natus error sit amet
                   voluptatem totam rem aperiam.
                 </p>
-                <address className="flex items-center text-sm font-medium text-dark dark:text-white justify-center sm:justify-start not-italic mx-auto">
+                <address className="flex items-center text-sm font-medium text-dark dark:text-white justify-center sm:justify-start not-italic mx-auto lg:mx-0">
                   <span className="mr-3 text-primary">
                     {/* Phone Icon SVG */}
                     <svg
