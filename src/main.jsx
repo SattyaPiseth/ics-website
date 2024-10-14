@@ -5,11 +5,13 @@ import "./index.css";
 import MainLayout from "./layouts/MainLayout";
 import { ThemeProvider } from "@material-tailwind/react";
 import { Gallery } from "./components/GalleryComponent";
+import Loader from "./components/LoaderComponent";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <Loader/>,
     children: [{
       path: "/",
       element: <Gallery/>
