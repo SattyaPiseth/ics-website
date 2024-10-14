@@ -10,12 +10,12 @@ const Navbar = () => {
           <div className="w-96 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
-                src="./../assets/ICS-Logo.png"
+                src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                 alt="logo"
                 className="dark:hidden w-80 sm:max-w-fit"
               />
               <img
-                src="./../assets/ICS-Logo.png"
+                src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                 alt="logo"
                 className="hidden dark:block"
               />
