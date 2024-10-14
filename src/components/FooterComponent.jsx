@@ -14,12 +14,12 @@ const Footer = () => {
                   className="mb-6 inline-block max-w-80 mx-auto sm:mx-0"
                 >
                   <img
-                    src="./assets/ICS-Logo.png"
+                    src="./../assets/ICS-Logo.png"
                     alt="logo"
                     className="max-w-full dark:hidden h-auto"
                   />
                   <img
-                    src="./assets/ICS-Logo.png"
+                    src="./../assets/ICS-Logo.png"
                     alt="logo"
                     className="max-w-full hidden dark:block h-auto"
                   />
