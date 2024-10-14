@@ -1,28 +1,26 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation(); // Get the current location
 
   const navLinks = [
-    { title: "Home", href: "#" },
-    { title: "About", href: "#" },
-    { title: "Blog", href: "#" },
-    { title: "Components", href: "#components-page" },
+    { title: "Home", href: "/" },
+    { title: "About", href: "/about" },
+    { title: "Blog", href: "/blog" },
+    { title: "Components", href: "/components" },
   ];
 
   return (
-    <nav className="flex w-full items-center bg-white dark:bg-dark">
+    <nav className="flex w-full items-center bg-white dark:bg-dark" role="navigation">
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-96 max-w-full px-4">
             <h1 className="block w-full py-5">
               <img
                 loading="lazy"
-                src={
-                  open
-                    ? "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
-                    : "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
-                }
+                src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                 alt="logo"
                 className="w-80 sm:max-w-fit dark:hidden transition-all duration-300"
               />
@@ -35,7 +33,7 @@ const Navbar = () => {
                 aria-expanded={open}
                 aria-controls="navbarCollapse"
                 id="navbarToggler"
-                className={` ${
+                className={`${
                   open ? "navbarTogglerActive" : ""
                 } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
               >
@@ -52,9 +50,11 @@ const Navbar = () => {
                 <ul className="block lg:flex">
                   {navLinks.map((link, index) => (
                     <li key={index}>
-                      <a
-                        href={link.href}
-                        className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex cursor-pointer items-center justify-between rounded-lg group"
+                      <Link
+                        to={link.href}
+                        className={`flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex cursor-pointer items-center justify-between rounded-lg group ${
+                          location.pathname === link.href ? 'text-primary' : ''
+                        }`}
                       >
                         {link.title}
                         {link.title === "Components" && (
@@ -69,27 +69,27 @@ const Navbar = () => {
                             </svg>
                           </span>
                         )}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </nav>
             </div>
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a
-                href="/#"
+              <Link
+                to="/signin"
                 aria-label="Sign in"
                 className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white"
               >
                 Sign in
-              </a>
-              <a
-                href="/#"
+              </Link>
+              <Link
+                to="/signup"
                 aria-label="Sign up"
                 className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90"
               >
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
