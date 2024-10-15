@@ -33,9 +33,10 @@ export default function NavbarComponent() {
                     open ? "navbarTogglerActive" : ""
                   } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
                 >
+                  {/* <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
                   <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span> */}
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"></path></svg>
                 </button>
                 <nav
                   className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 mt-4 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
