@@ -8,17 +8,17 @@ export default function NavbarComponent() {
       <div className="bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4">
+            <div className="w-96 max-w-full px-4">
               <a href="#" className="block w-full py-5">
                 <img
-                  src="https://cdn.tailgrids.com/2.2/assets/images/logo/logo-primary.svg"
+                  src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                   alt="logo"
-                  className="dark:hidden"
+                  className="dark:hidden w-80 sm:max-w-fit transition-all duration-300"
                 />
                 <img
-                  src="https://cdn.tailgrids.com/2.2/assets/images/logo/logo-white.svg"
+                  src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                   alt="logo"
-                  className="hidden dark:block"
+                  className="hidden dark:block w-80 sm:max-w-fit transition-all duration-300"
                 />
               </a>
             </div>
