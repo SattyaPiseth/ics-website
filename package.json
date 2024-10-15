@@ -21,7 +21,8 @@
     "react-router-dom": "^6.27.0",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.13",
-    "tailgrids": "^2.2.7"
+    "tailgrids": "^2.2.7",
+    "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

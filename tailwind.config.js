@@ -24,6 +24,7 @@ module.exports = withMT({
   },
   plugins: [
     require("tailgrids/plugin"),
-    require("@tailwindcss/line-clamp"), // Add the line-clamp plugin
+    require("@tailwindcss/line-clamp"),
+    require('tailwind-scrollbar'), // Add the line-clamp plugin
   ],
 });
