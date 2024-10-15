@@ -63,7 +63,7 @@ export default function NavbarComponent() {
                   <ul className="block lg:flex whitespace-nowrap">
                     <li className="group relative">
                       <a
-                        href="#"
+                        href="home"
                         className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white rounded-lg lg:px-1.5 xl:px-3"
                       >
                         home
@@ -71,7 +71,7 @@ export default function NavbarComponent() {
                     </li>
                     <li className="group relative">
                       <a
-                        href="#"
+                        href="about-us"
                         className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3  rounded-lg"
                       >
                         about us
@@ -343,13 +343,13 @@ export default function NavbarComponent() {
               </div>
               <div className="hidden justify-end gap-3 pr-16 sm:flex lg:pr-0 whitespace-nowrap">
                 <a
-                  href="#"
+                  href="login"
                   className="rounded-lg bg-gray-2 px-5 py-2.5 text-base font-medium text-dark hover:text-primary dark:bg-white/5 dark:text-white uppercase"
                 >
                   login
                 </a>
                 <a
-                  href="#"
+                  href="register"
                   className="rounded-lg bg-primary px-5 py-2.5 text-base font-medium text-white hover:bg-primary/90 uppercase"
                 >
                   sign up
