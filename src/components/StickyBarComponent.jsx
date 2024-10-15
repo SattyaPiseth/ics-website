@@ -4,7 +4,7 @@ export default function StickyBar() {
       <div className="container">
         <div className="relative flex items-center justify-center text-center space-x-3">
           {/* Icon */}
-          <span className="flex items-center justify-center p-1 w-6 h-6 bg-gray-200 rounded-full dark:bg-gray-600">
+          <span className="flex items-center justify-center w-6 h-6 bg-gray-200 p-1.5 rounded-full dark:bg-gray-600">
             <svg
               className="w-3 h-3 text-gray-500 dark:text-gray-400"
               aria-hidden="true"
