@@ -10,31 +10,19 @@ const Loader = () => {
 };
 
 const StyledWrapper = styled.div`
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  position: fixed; /* Fix position to viewport */
-  top: 0; /* Align to top */
-  left: 0; /* Align to left */
+  position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: background color for contrast */
+  height: 0;
+  padding-bottom: 50%; // This maintains the aspect ratio
 
   .loader {
-    position: relative; /* Change to relative */
-    width: 5em;
-    height: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5em; /* Increased from 2.5em */
+    height: 5em; /* Increased from 2.5em */
     transform-origin: center center;
-
-    @media (max-width: 768px) {
-      width: 4em;
-      height: 4em;
-    }
-
-    @media (max-width: 480px) {
-      width: 3em;
-      height: 3em;
-    }
   }
 
   .loader:before,
@@ -44,23 +32,11 @@ const StyledWrapper = styled.div`
     top: 50%;
     left: 50%;
     display: block;
-    width: 0.75em;
-    height: 0.75em;
-    border-radius: 0.375em;
+    width: 0.75em; /* Increased from 0.5em */
+    height: 0.75em; /* Increased from 0.5em */
+    border-radius: 0.375em; /* Increased from 0.25em */
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.5s ease-in-out;
-
-    @media (max-width: 768px) {
-      width: 0.6em;
-      height: 0.6em;
-      border-radius: 0.3em;
-    }
-
-    @media (max-width: 480px) {
-      width: 0.5em;
-      height: 0.5em;
-      border-radius: 0.25em;
-    }
   }
 
   .loader:before {
