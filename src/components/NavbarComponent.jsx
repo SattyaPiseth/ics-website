@@ -24,51 +24,51 @@ export default function NavbarComponent() {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
-              <button
-                onClick={() => setOpen(!open)}
-                aria-expanded={open}
-                aria-controls="navbarCollapse"
-                id="navbarToggler"
-                className={`${
-                  open ? "navbarTogglerActive" : ""
-                } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
-              >
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
-                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
-              </button>
+                <button
+                  onClick={() => setOpen(!open)}
+                  aria-expanded={open}
+                  aria-controls="navbarCollapse"
+                  id="navbarToggler"
+                  className={`${
+                    open ? "navbarTogglerActive" : ""
+                  } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
+                >
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                </button>
                 <nav
                   className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 mt-4 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
                     !open && "hidden"
                   }`}
                 >
                   <ul className="block lg:flex">
-                    <li>
+                    <li className="group relative">
                       <a
                         href="#"
-                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
+                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white rounded-lg lg:px-1.5 xl:px-3"
                       >
-                        Home
+                        home
                       </a>
                     </li>
-                    <li>
+                    <li className="group relative">
                       <a
                         href="#"
-                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
+                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3  rounded-lg"
                       >
-                        Features
+                        about us
                       </a>
                     </li>
                     <li className="group relative">
                       <button
                         onClick={() => setShowMegaMenu(!showMegaMenu)}
-                        className="flex w-full items-center justify-between gap-2 py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-2.5 rounded-lg"
+                        className="flex w-full items-center justify-between gap-2 py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg uppercase "
                       >
-                        Resources
+                        resources
                         <span
                           className={`${
                             showMegaMenu
-                              ? "-scale-y-100"
+                              ? "-scale-y-100 scale-100"
                               : "lg:group-hover:-scale-y-100 scale-100 lg:scale-110"
                           } duration-200`}
                         >
@@ -91,7 +91,7 @@ export default function NavbarComponent() {
                           showMegaMenu ? "block" : "hidden"
                         }`}
                       >
-                        <div className="grid gap-5 lg:grid-cols-2">
+                        <div className="grid gap-5 grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-2">
                           <div>
                             <h4 className="mb-3 text-sm font-semibold text-dark dark:text-white">
                               Get Started
@@ -326,15 +326,15 @@ export default function NavbarComponent() {
               <div className="hidden justify-end gap-3 pr-16 sm:flex lg:pr-0">
                 <a
                   href="#"
-                  className="rounded-lg bg-gray-2 px-5 py-2.5 text-base font-medium text-dark hover:text-primary dark:bg-white/5 dark:text-white"
+                  className="rounded-lg bg-gray-2 px-5 py-2.5 text-base font-medium text-dark hover:text-primary dark:bg-white/5 dark:text-white uppercase"
                 >
-                  Login
+                  login
                 </a>
                 <a
                   href="#"
-                  className="rounded-lg bg-primary px-5 py-2.5 text-base font-medium text-white hover:bg-primary/90"
+                  className="rounded-lg bg-primary px-5 py-2.5 text-base font-medium text-white hover:bg-primary/90 uppercase"
                 >
-                  Sign Up
+                  sign up
                 </a>
               </div>
             </div>
