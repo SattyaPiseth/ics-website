@@ -148,7 +148,7 @@ export default function NavbarComponent() {
                                   <h3 className="mb-1 text-base font-semibold text-dark duration-200  dark:text-white">
                                     About Company
                                   </h3>
-                                  <p className="text-sm text-body-color dark:text-dark-6">
+                                  <p className="text-sm text-body-color dark:text-dark-6 text-wrap">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.
                                   </p>
@@ -180,7 +180,7 @@ export default function NavbarComponent() {
                                   <h3 className="mb-1 text-base font-semibold text-dark duration-200 dark:text-white ">
                                     Our Pricing
                                   </h3>
-                                  <p className="text-sm text-body-color dark:text-dark-6">
+                                  <p className="text-sm text-wrap text-body-color dark:text-dark-6">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.
                                   </p>
@@ -212,7 +212,7 @@ export default function NavbarComponent() {
                                   <h3 className="mb-1 text-base font-semibold text-dark duration-200  dark:text-white ">
                                     Read Blog
                                   </h3>
-                                  <p className="text-sm text-body-color dark:text-dark-6">
+                                  <p className="text-sm text-wrap text-body-color dark:text-dark-6">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.
                                   </p>
@@ -259,7 +259,7 @@ export default function NavbarComponent() {
                                   <h3 className="mb-1 text-base font-semibold text-dark duration-200  dark:text-white">
                                     Help Center
                                   </h3>
-                                  <p className="text-sm text-body-color dark:text-dark-6">
+                                  <p className="text-sm text-wrap text-body-color dark:text-dark-6">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.
                                   </p>
@@ -295,7 +295,7 @@ export default function NavbarComponent() {
                                   <h3 className="mb-1 text-base font-semibold text-dark duration-200  dark:text-white ">
                                     Documentation
                                   </h3>
-                                  <p className="text-sm text-body-color dark:text-dark-6">
+                                  <p className="text-sm text-wrap text-body-color dark:text-dark-6">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.
                                   </p>
