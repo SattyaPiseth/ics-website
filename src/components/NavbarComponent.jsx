@@ -31,7 +31,7 @@ export default function NavbarComponent() {
                   id="navbarToggler"
                   className={`${
                     open ? "navbarTogglerActive" : ""
-                  } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
+                  } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden transition-all duration-300`}
                 >
                   {/* <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
                   <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
@@ -56,11 +56,11 @@ export default function NavbarComponent() {
                   </svg>
                 </button>
                 <nav
-                  className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 mt-4 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
+                  className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
                     !open && "hidden"
                   }`}
                 >
-                  <ul className="block lg:flex">
+                  <ul className="block lg:flex whitespace-nowrap">
                     <li className="group relative">
                       <a
                         href="#"
@@ -105,11 +105,11 @@ export default function NavbarComponent() {
                         </span>
                       </button>
                       <div
-                        className={`w-full bg-white lg:left-0 lg:top-full  lg:p-8  dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 pb-2 lg:absolute lg:hidden lg:max-h-[450px] lg:w-[800px] lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)]  ${
+                        className={`w-full bg-white lg:left-0 lg:top-full  lg:p-8 dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 pb-2 lg:absolute lg:hidden lg:max-h-[450px] lg:w-96 lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)] ${
                           showMegaMenu ? "block" : "hidden"
                         }`}
                       >
-                        <div className="grid gap-5 grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-2">
+                        <div className="grid gap-5 grid-cols-1 lg:grid-cols-1  max-h-96 w-full overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                           <div>
                             <h4 className="mb-3 text-sm font-semibold text-dark dark:text-white">
                               Get Started
@@ -341,7 +341,7 @@ export default function NavbarComponent() {
                   </ul>
                 </nav>
               </div>
-              <div className="hidden justify-end gap-3 pr-16 sm:flex lg:pr-0">
+              <div className="hidden justify-end gap-3 pr-16 sm:flex lg:pr-0 whitespace-nowrap">
                 <a
                   href="#"
                   className="rounded-lg bg-gray-2 px-5 py-2.5 text-base font-medium text-dark hover:text-primary dark:bg-white/5 dark:text-white uppercase"
