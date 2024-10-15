@@ -13,28 +13,30 @@ export default function NavbarComponent() {
                 <img
                   src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                   alt="logo"
-                  className="dark:hidden w-80 sm:max-w-fit transition-all duration-300"
+                  className="dark:hidden w-80 sm:max-w-fit sm:w-96 md:w-80 transition-all duration-300"
                 />
                 <img
                   src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
                   alt="logo"
-                  className="hidden dark:block w-80 sm:max-w-fit transition-all duration-300"
+                  className="hidden dark:block w-80 sm:max-w-fit sm:w-96 md:w-80 transition-all duration-300"
                 />
               </a>
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
-                <button
-                  onClick={() => setOpen(!open)}
-                  id="navbarToggler"
-                  className={`  ${
-                    open && "navbarTogglerActive"
-                  } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
-                >
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
-                </button>
+              <button
+                onClick={() => setOpen(!open)}
+                aria-expanded={open}
+                aria-controls="navbarCollapse"
+                id="navbarToggler"
+                className={`${
+                  open ? "navbarTogglerActive" : ""
+                } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
+              >
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+                <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white transition-all duration-300"></span>
+              </button>
                 <nav
                   className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 mt-4 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
                     !open && "hidden"
