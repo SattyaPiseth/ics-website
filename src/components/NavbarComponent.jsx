@@ -109,7 +109,7 @@ export default function NavbarComponent() {
                           showMegaMenu ? "block" : "hidden"
                         }`}
                       >
-                        <div className="grid gap-5 grid-cols-1 lg:grid-cols-1  max-h-96 w-full overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+                        <div className="grid gap-5 grid-cols-1 max-h-52 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 sm:max-h-56 md:max-h-80 lg:max-h-96 w-full overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                           <div>
                             <h4 className="mb-3 text-sm font-semibold text-dark dark:text-white">
                               Get Started
