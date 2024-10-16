@@ -56,7 +56,7 @@ export default function NavbarComponent() {
                   </svg>
                 </button>
                 <nav
-                  className={`absolute right-4 px-6 shadow lg:block lg:w-full header-navbar z-40 w-full max-w-[300px] rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-[400px] lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
+                  className={`absolute right-0 px-6 shadow lg:block lg:w-full header-navbar z-40 w-full max-w-full rounded bg-white py-2 shadow-features duration-300 dark:bg-dark-2 xs:max-w-full lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
                     !open && "hidden"
                   }`}
                 >
@@ -64,7 +64,7 @@ export default function NavbarComponent() {
                     <li className="group relative">
                       <a
                         href="home"
-                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white rounded-lg lg:px-1.5 xl:px-3"
+                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white rounded-lg lg:px-1.5 xl:px-3"
                       >
                         home
                       </a>
@@ -72,7 +72,7 @@ export default function NavbarComponent() {
                     <li className="group relative">
                       <a
                         href="about-us"
-                        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3  rounded-lg"
+                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3  rounded-lg"
                       >
                         about us
                       </a>
@@ -80,7 +80,7 @@ export default function NavbarComponent() {
                     <li className="group relative">
                       <button
                         onClick={() => setShowMegaMenu(!showMegaMenu)}
-                        className="flex w-full items-center justify-between gap-2 py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg uppercase "
+                        className="flex w-full items-center justify-center gap-2 py-2 text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg uppercase "
                       >
                         resources
                         <span
