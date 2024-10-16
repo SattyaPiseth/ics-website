@@ -5,7 +5,7 @@ export default function NavbarComponent() {
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   return (
     <header>
-      <div className="bg-white dark:bg-dark">
+      <div className="bg-white dark:bg-dark font-poppins">
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-96 min-w-60 max-w-full px-4">

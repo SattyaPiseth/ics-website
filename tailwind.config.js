@@ -21,7 +21,12 @@ module.exports = withMT({
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        moul: ['Moul', 'cursive'], // Add Moul font
+        poppins: ['Poppins', 'sans-serif'], // Add Poppins font
+      },
+    },
   },
   plugins: [
     require("tailgrids/plugin"),

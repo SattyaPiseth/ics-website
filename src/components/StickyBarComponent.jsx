@@ -1,6 +1,6 @@
 export default function StickyBar() {
   return (
-    <section className="border-b border-stroke bg-gray-1 px-3 py-2 sm:px-4 sm:py-3 dark:border-dark-3 dark:bg-dark-2">
+    <section className="border-b border-stroke bg-gray-1 px-3 py-2 sm:px-4 sm:py-3 dark:border-dark-3 dark:bg-dark-2 font-poppins">
       <div className="container">
         <div className="relative flex items-center justify-center text-center space-x-3">
           {/* Icon */}
