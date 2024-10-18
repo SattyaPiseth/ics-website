@@ -66,7 +66,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
       </button>
       <div
         id="dropdown-menu"
-        className={`w-full bg-white lg:left-0 lg:top-full lg:p-8 dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 lg:absolute lg:hidden lg:max-h-[450px] lg:w-96 lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)] ${
+        className={`w-full bg-white lg:left-0 lg:top-full lg:p-5 dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 lg:absolute lg:hidden lg:max-h-[450px] lg:w-96 lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)] ${
           showMegaMenu ? "block" : "hidden"
         }`}
       >
