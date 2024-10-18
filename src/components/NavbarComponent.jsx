@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import { FaBook, FaChalkboardTeacher, FaCode } from "react-icons/fa";
+import { FaChalkboardTeacher, FaChartLine, FaCode, FaDonate, FaFolderOpen } from "react-icons/fa";
+import { FaBuildingNgo, FaHandshakeSimple, FaRoadCircleCheck } from "react-icons/fa6";
+import { BiSolidMessageDetail } from "react-icons/bi";
 
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
@@ -12,7 +14,7 @@ export default function NavbarComponent() {
           href: "#",
           title: "Getting Started Guide",
           description: "Explore the guide to get started quickly.",
-          Icon: FaBook,
+          Icon: FaRoadCircleCheck,
         },
       ],
     },
@@ -23,7 +25,7 @@ export default function NavbarComponent() {
           href: "#",
           title: "Advanced Topics",
           description: "Deep dive into advanced topics.",
-          Icon: FaChalkboardTeacher,
+          Icon: FaChartLine,
         },
       ],
     },
@@ -34,7 +36,7 @@ export default function NavbarComponent() {
           href: "#",
           title: "Coding Best Practices",
           description: "Learn about coding best practices.",
-          Icon: FaCode,
+          Icon: FaFolderOpen,
         },
       ],
     },
@@ -47,7 +49,7 @@ export default function NavbarComponent() {
           href: "#",
           title: "Getting Started Guide",
           description: "Explore the guide to get started quickly.",
-          Icon: FaBook,
+          Icon: FaHandshakeSimple,
         },
       ],
     },
@@ -58,7 +60,7 @@ export default function NavbarComponent() {
           href: "#",
           title: "Getting Started Guide",
           description: "Explore the guide to get started quickly.",
-          Icon: FaBook,
+          Icon: FaDonate,
         },
       ],
     },
@@ -70,9 +72,21 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Getting Started Guide",
-          description: "Explore the guide to get started quickly.",
-          Icon: FaBook,
+          title: "Who We Are",
+          description: "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
+          Icon: FaBuildingNgo,
+        },
+        {
+          href: "#",
+          title: "Our Mission",
+          description: "ICS-SP is dedicated to ending family violence and improving the well-being of children and women in Cambodia through collaborative efforts and skillful parenting programs.",
+          Icon: FaBuildingNgo,
+        },
+        {
+          href: "#",
+          title: "Our Vision",
+          description: "We envision a society where every family thrives in a violence-free environment, fostering positive relationships and ensuring a safe and nurturing space for children and women.",
+          Icon: FaBuildingNgo,
         },
       ],
     },
@@ -81,9 +95,9 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Getting Started Guide",
-          description: "Explore the guide to get started quickly.",
-          Icon: FaBook,
+          title: "Get in Touch with Us",
+          description: "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
+          Icon: BiSolidMessageDetail,
         },
       ],
     },
