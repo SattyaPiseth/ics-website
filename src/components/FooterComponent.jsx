@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Footer = () => {
   return (
@@ -25,8 +26,8 @@ const Footer = () => {
                   />
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6 text-center sm:text-left md:text-center lg:text-left">
-                  Sed ut perspiciatis undmnis is iste natus error sit amet
-                  voluptatem totam rem aperiam.
+                  Improving Cambodia’s Society through Skilful Parenting
+                  (ICS-SP)
                 </p>
                 <address className="flex items-center text-sm font-medium text-dark dark:text-white justify-center sm:justify-start not-italic mx-auto lg:mx-0">
                   <span className="mr-3 text-primary">
@@ -59,31 +60,32 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </span>
-                  <span>+012 (345) 678 99</span>
+                  <span>(+855) 12 520 663</span>
                 </address>
               </div>
             </div>
 
             {/* Resources Links */}
             <LinkGroup header="Resources">
-              <NavLink link="/#" label="SaaS Development" />
-              <NavLink link="/#" label="Our Products" />
-              <NavLink link="/#" label="User Flow" />
-              <NavLink link="/#" label="User Strategy" />
+              <NavLink link="/#" label="All Resources" />
+              <NavLink link="/#" label="Positive Parenting Tips" />
+              <NavLink link="/#" label="MoWA-Led Positive Parenting Toolkits" />
+
+              {/* <NavLink link="/#" label="User Strategy" /> */}
             </LinkGroup>
 
             {/* Company Links */}
-            <LinkGroup header="Company">
-              <NavLink link="/#" label="About TailGrids" />
+            <LinkGroup header="About & Contact">
+              <NavLink link="/#" label="About ICS-SP" />
+              <NavLink link="/#" label="Our Mission" />
+              <NavLink link="/#" label="Our Vision" />
               <NavLink link="/#" label="Contact & Support" />
-              <NavLink link="/#" label="Success History" />
-              <NavLink link="/#" label="Setting & Privacy" />
             </LinkGroup>
 
             {/* Quick Links */}
-            <LinkGroup header="Quick Links" className="hidden sm:block">
-              <NavLink link="/#" label="Premium Support" />
-              <NavLink link="/#" label="Our Services" />
+            <LinkGroup header="Partners & Support" className="hidden sm:block">
+              <NavLink link="/#" label="Partners & Donors" />
+              <NavLink link="/#" label="Donate" />
               <NavLink link="/#" label="Know Our Team" />
               <NavLink link="/#" label="Download App" />
             </LinkGroup>
@@ -91,62 +93,61 @@ const Footer = () => {
             {/* Social Media Follow */}
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12 mt-10 sm:mt-0">
               <div className="mb-10 w-full">
-                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white text-center sm:text-left flex justify-center sm:justify-center md:justify-center lg:justify-start overflow-x-auto">
+                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white text-center sm:text-left flex justify-center overflow-hidden">
                   Follow Us On
                 </h4>
-                <div className="mb-6 flex items-center overflow-x-auto justify-center sm:justify-center md:justify-center lg:justify-start">
+                <div className="flex items-center justify-center space-x-4 overflow-hidden">
                   <a
-                    href="https://facebook.com"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                    href="https://www.facebook.com/profile.php?id=100064926750645"
+                    className="flex items-center justify-center h-12 w-12 rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary transition-all duration-300 ease-in-out transform scale-100 hover:scale-100"
                   >
                     <svg
-                      width="8"
-                      height="16"
-                      viewBox="0 0 8 16"
-                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      className="h-6 w-6"
                     >
-                      <path d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z"></path>
+                      <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
                     </svg>
                   </a>
-                  <a
-                    href="https://twitter.com"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                  <button
+                    onClick={() => {
+                      navigator.clipboard
+                        .writeText("info@ics-skillfulparenting.org")
+                        .then(() => {
+                          toast.success("Link copied to clipboard!", {
+                            autoClose: 3000,
+                          });
+                        });
+                    }}
+                    className="flex items-center justify-center h-12 w-12 rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary transition-all duration-300 ease-in-out transform scale-100 hover:scale-100"
                   >
                     <svg
-                      width="16"
-                      height="12"
-                      viewBox="0 0 16 12"
-                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      className="h-6 w-6"
                     >
-                      <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z"></path>
+                      <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
                     </svg>
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText("012520663").then(() => {
+                        toast.success("Link copied to clipboard!", {
+                          autoClose: 3000,
+                        });
+                      });
+                    }}
+                    className="flex items-center justify-center h-12 w-12 rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary transition-all duration-300 ease-in-out transform scale-100 hover:scale-100"
                   >
                     <svg
-                      width="16"
-                      height="12"
-                      viewBox="0 0 16 12"
-                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                      className="h-6 w-6"
                     >
-                      <path d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C13.0065 12 14.2452 11.6406 14.9419 11.447C15.4839 10.8664 15.6645 10.1198 16 8.79263C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z"></path>
+                      <path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
                     </svg>
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
-                  >
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      className="fill-current"
-                    >
-                      <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.11678 4.43349C2.30549 4.43349 1.67461 3.81183 1.67461 3.00349C1.67461 2.1873 2.30549 1.57668 3.11678 1.57668C3.92786 1.57668 4.55855 2.1873 4.55855 3.00349C4.55855 3.81183 3.92786 4.43349 3.11678 4.43349ZM11.9 11.9H9.84365V8.56258C9.84365 7.94976 9.7778 6.8763 8.58343 6.8763C7.35403 6.8763 7.11 7.84614 7.11 8.75453V11.9H5.04984V5.23871H7.09177V6.30316H7.11678C7.39063 5.49023 8.287 4.43 9.96195 4.43C12.0307 4.43 11.9 6.60328 11.9 8.65864V11.9Z"></path>
-                    </svg>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

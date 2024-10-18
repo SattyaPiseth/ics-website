@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+const colors = require('tailwindcss/colors');
 
 module.exports = withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
@@ -25,6 +26,16 @@ module.exports = withMT({
       fontFamily: {
         moul: ['Moul', 'cursive'], // Add Moul font
         poppins: ['Poppins', 'sans-serif'], // Add Poppins font
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#0070C0',  // A blue shade from the logo
+        },
+        secondary: {
+          DEFAULT: '#FF0000',  // A red shade from the logo
+        },
+        white: '#FFFFFF',     // White for the text in the "ICS"
+        dark: '#202124',      // A dark color for background/contrast (if needed)
       },
     },
   },

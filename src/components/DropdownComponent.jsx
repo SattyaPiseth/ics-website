@@ -44,7 +44,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
       >
         {label}
         <span
-          className={`transform transition-transform duration-200 ${
+          className={`transform transition-transform duration-200  ${
             showMegaMenu
               ? "-scale-y-100"
               : "lg:group-hover:-scale-y-100 scale-100 lg:scale-110"
