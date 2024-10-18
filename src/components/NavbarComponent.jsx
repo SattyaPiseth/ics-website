@@ -157,16 +157,17 @@ export default function NavbarComponent() {
                         dropDownSection={aboutUsSection}
                       />
                     </ul>
-                    <ul>
-                      <DropdownComponent
-                        label={"Expertise & Resources"}
-                        dropDownSection={expertiseSection}
-                      />
-                    </ul>
+                    
                     <ul>
                       <DropdownComponent
                         label={"Partners & Support"}
                         dropDownSection={partnersSection}
+                      />
+                    </ul>
+                    <ul>
+                      <DropdownComponent
+                        label={"Expertise & Resources"}
+                        dropDownSection={expertiseSection}
                       />
                     </ul>
                     <li className="group relative hidden xl:block">
