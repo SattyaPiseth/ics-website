@@ -1,8 +1,21 @@
 import React, { useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import { FaChalkboardTeacher, FaChartLine, FaCode, FaDonate, FaFolderOpen } from "react-icons/fa";
-import { FaBuildingNgo, FaHandshakeSimple, FaRoadCircleCheck } from "react-icons/fa6";
+import {
+  FaChalkboardTeacher,
+  FaChartLine,
+  FaCode,
+  FaDonate,
+  FaFolderOpen,
+} from "react-icons/fa";
+import {
+  FaBuildingNgo,
+  FaHandshakeSimple,
+  FaListCheck,
+  FaRoadCircleCheck,
+} from "react-icons/fa6";
 import { BiSolidMessageDetail } from "react-icons/bi";
+import { TbCopyCheckFilled } from "react-icons/tb";
+import { GrMoney } from "react-icons/gr";
 
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
@@ -12,9 +25,15 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Getting Started Guide",
-          description: "Explore the guide to get started quickly.",
-          Icon: FaRoadCircleCheck,
+          title: "Skillful Parenting Program",
+          description: "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
+          Icon: TbCopyCheckFilled,
+        },
+        {
+          href: "#",
+          title: "Family Budgeting",
+          description: "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
+          Icon: GrMoney,
         },
       ],
     },
@@ -23,8 +42,8 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Advanced Topics",
-          description: "Deep dive into advanced topics.",
+          title: "Tailored Training Services",
+          description: "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
           Icon: FaChartLine,
         },
       ],
@@ -34,8 +53,8 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Coding Best Practices",
-          description: "Learn about coding best practices.",
+          title: "Skillful Parenting Guide",
+          description: "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
           Icon: FaFolderOpen,
         },
       ],
@@ -73,20 +92,23 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Who We Are",
-          description: "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
+          description:
+            "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
           Icon: FaBuildingNgo,
         },
         {
           href: "#",
           title: "Our Mission",
-          description: "ICS-SP is dedicated to ending family violence and improving the well-being of children and women in Cambodia through collaborative efforts and skillful parenting programs.",
-          Icon: FaBuildingNgo,
+          description:
+            "ICS-SP is dedicated to ending family violence and improving the well-being of children and women in Cambodia through collaborative efforts and skillful parenting programs.",
+          Icon: FaListCheck,
         },
         {
           href: "#",
           title: "Our Vision",
-          description: "We envision a society where every family thrives in a violence-free environment, fostering positive relationships and ensuring a safe and nurturing space for children and women.",
-          Icon: FaBuildingNgo,
+          description:
+            "We envision a society where every family thrives in a violence-free environment, fostering positive relationships and ensuring a safe and nurturing space for children and women.",
+          Icon: FaRoadCircleCheck,
         },
       ],
     },
@@ -96,7 +118,8 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Get in Touch with Us",
-          description: "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
+          description:
+            "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
           Icon: BiSolidMessageDetail,
         },
       ],
@@ -171,7 +194,7 @@ export default function NavbarComponent() {
                         dropDownSection={aboutUsSection}
                       />
                     </ul>
-                    
+
                     <ul>
                       <DropdownComponent
                         label={"Partners & Support"}
