@@ -19,6 +19,8 @@ import { GrMoney } from "react-icons/gr";
 
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
+
+  // Accessibility-enhanced sections
   const expertiseSection = [
     {
       title: "Expertise",
@@ -26,13 +28,15 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Skillful Parenting Program",
-          description: "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
+          description:
+            "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
           Icon: TbCopyCheckFilled,
         },
         {
           href: "#",
           title: "Family Budgeting",
-          description: "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
+          description:
+            "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
           Icon: GrMoney,
         },
       ],
@@ -43,7 +47,8 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Tailored Training Services",
-          description: "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
+          description:
+            "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
           Icon: FaChartLine,
         },
       ],
@@ -54,12 +59,14 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Skillful Parenting Guide",
-          description: "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
+          description:
+            "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
           Icon: FaFolderOpen,
         },
       ],
     },
   ];
+
   const partnersSection = [
     {
       title: "Partners & Donors",
@@ -135,13 +142,13 @@ export default function NavbarComponent() {
               <a href="#" className="block w-full py-5" aria-label="Logo">
                 <img
                   src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
-                  alt="Logo"
+                  alt="ICS Skillful Parenting Logo"
                   className="dark:hidden w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
                 <img
                   src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
-                  alt="Logo"
-                  className="hidden dark:block w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60  xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                  alt="ICS Skillful Parenting Logo (Dark Mode)"
+                  className="hidden dark:block w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
               </a>
             </div>
