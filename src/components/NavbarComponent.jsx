@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import {
-  FaChalkboardTeacher,
-  FaChartLine,
-  FaCode,
-  FaDonate,
-  FaFolderOpen,
-} from "react-icons/fa";
+import { IoIosClose } from "react-icons/io";
+import { FaChartLine, FaCode, FaDonate, FaFolderOpen } from "react-icons/fa";
 import {
   FaBuildingNgo,
   FaHandshakeSimple,
@@ -74,7 +69,8 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Collaborative Partnerships",
-          description: "Discover how we work with organizations to end violence in families.",
+          description:
+            "Discover how we work with organizations to end violence in families.",
           Icon: FaHandshakeSimple,
         },
       ],
@@ -85,7 +81,8 @@ export default function NavbarComponent() {
         {
           href: "#",
           title: "Support Skilful Parenting",
-          description: "Help us improve family lives and protect children and women from violence.",
+          description:
+            "Help us improve family lives and protect children and women from violence.",
           Icon: FaDonate,
         },
       ],
@@ -159,26 +156,32 @@ export default function NavbarComponent() {
                   aria-expanded={open}
                   aria-controls="navbarCollapse"
                   id="navbarToggler"
-                  className={`${
-                    open ? "navbarTogglerActive" : ""
-                  } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden transition-all duration-300`}
+                  className={`absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden transition-all duration-300`}
                   aria-label="Toggle navigation"
                 >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    viewBox="0 0 512 512"
-                    className="w-5 h-5 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeMiterlimit="10"
-                      strokeWidth="48"
-                      d="M88 152h336M88 256h336M88 360h336"
-                    ></path>
-                  </svg>
+                  {open ? (
+                    <IoIosClose
+                      className="w-6 h-6 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
+                      aria-hidden="true" // Hide this icon from assistive technologies
+                    />
+                  ) : (
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      viewBox="0 0 512 512"
+                      className="w-5 h-5 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" // Hide this icon from assistive technologies
+                    >
+                      <path
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="48"
+                        d="M88 152h336M88 256h336M88 360h336"
+                      ></path>
+                    </svg>
+                  )}
                 </button>
                 <nav
                   className={`absolute right-0 px-6 shadow lg:block lg:w-full header-navbar z-40 w-full max-w-full rounded bg-white py-3 shadow-features duration-300 dark:bg-dark-2 xs:max-w-full lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
