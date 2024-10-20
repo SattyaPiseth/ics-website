@@ -9,10 +9,10 @@ const DropdownItem = ({ href, title, description, Icon }) => (
   >
     <div className="text-primary">{Icon && <Icon size={24} aria-hidden="true" />}</div>
     <div className="flex-1">
-      <h5 className="text-base font-semibold text-dark dark:text-white">
+      <h5 className="text-sm xl:text-base font-semibold text-dark dark:text-white">
         {title}
       </h5>
-      <p className="text-sm text-body-color dark:text-body-color-dark text-wrap">
+      <p className="text-xs xl:text-sm text-body-color dark:text-body-color-dark text-wrap">
         {description}
       </p>
     </div>
@@ -51,7 +51,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
       <button
         ref={buttonRef}
         onClick={() => setShowMegaMenu((prev) => !prev)}
-        className="flex w-full items-center justify-center gap-2 py-2 text-xs sm:text-xs md:text-sm lg:text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg uppercase"
+        className="flex w-full items-center justify-center gap-2 py-2 text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white duration-300 group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg uppercase"
         aria-expanded={showMegaMenu}
         aria-controls="dropdown-menu"
         aria-haspopup="true"
