@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import { IoIosClose } from "react-icons/io";
-import { FaChartLine, FaCode, FaDonate, FaFolderOpen } from "react-icons/fa";
+import { FaChartLine, FaDonate, FaFolderOpen } from "react-icons/fa";
 import {
   FaBuildingNgo,
   FaHandshakeSimple,
@@ -160,10 +159,30 @@ export default function NavbarComponent() {
                   aria-label="Toggle navigation"
                 >
                   {open ? (
-                    <IoIosClose
-                      className="w-5 h-5 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
-                      aria-hidden="true" // Hide this icon from assistive technologies
-                    />
+                    <button className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 text-dark-6 duration-200 hover:text-dark dark:hover:text-white">
+                      <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_2386_67)">
+                          <path
+                            d="M1 1L7 7M7 7L13 13M7 7L13 1M7 7L1 13"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2386_67">
+                            <rect width="14" height="14" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
                   ) : (
                     <svg
                       stroke="currentColor"
