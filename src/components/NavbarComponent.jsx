@@ -161,7 +161,7 @@ export default function NavbarComponent() {
                 >
                   {open ? (
                     <IoIosClose
-                      className="w-6 h-6 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
+                      className="w-5 h-5 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
                       aria-hidden="true" // Hide this icon from assistive technologies
                     />
                   ) : (
