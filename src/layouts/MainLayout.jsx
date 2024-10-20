@@ -3,6 +3,7 @@ import Navbar from "../components/NavbarComponent";
 import { Outlet } from "react-router-dom";
 import StickyBar from "../components/StickyBarComponent";
 import Footer from "../components/FooterComponent";
+import footerData from "./../json/layouts/footer.json";
 
 export default function MainLayout() {
   return (
@@ -14,7 +15,7 @@ export default function MainLayout() {
           <Outlet />
         </section>
       </main>
-      <Footer />
+      <Footer data={footerData}/>
     </>
   );
 }
