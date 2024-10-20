@@ -12,19 +12,19 @@ const SocialMediaFollow = ({ socialLinks }) => {
         .writeText(email)
         .then(() => {
           toast.success(toastMessage, {
-            autoClose: 3000,
+            autoClose: 1500,
           });
         })
         .catch(() => {
           toast.error(
             "Failed to copy email address to clipboard. Please try again!",
-            { autoClose: 3000 }
+            { autoClose: 2000 }
           );
         });
     } else {
       navigator.clipboard.writeText(link).then(() => {
         toast.error("Failed to copy link to clipboard. Please try again!", {
-          autoClose: 3000,
+          autoClose: 2000,
         });
       });
     }
