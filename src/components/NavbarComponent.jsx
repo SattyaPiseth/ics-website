@@ -73,8 +73,8 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Getting Started Guide",
-          description: "Explore the guide to get started quickly.",
+          title: "Collaborative Partnerships",
+          description: "Discover how we work with organizations to end violence in families.",
           Icon: FaHandshakeSimple,
         },
       ],
@@ -84,8 +84,8 @@ export default function NavbarComponent() {
       items: [
         {
           href: "#",
-          title: "Getting Started Guide",
-          description: "Explore the guide to get started quickly.",
+          title: "Support Skilful Parenting",
+          description: "Help us improve family lives and protect children and women from violence.",
           Icon: FaDonate,
         },
       ],
