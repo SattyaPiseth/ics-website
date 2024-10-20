@@ -113,7 +113,11 @@ const Footer = () => {
                     onClick={() => {
                       navigator.clipboard
                         .writeText("info@ics-skillfulparenting.org")
-                     
+                        .then(() => {
+                          toast.success("Link copied to clipboard!", {
+                            autoClose: 3000,
+                          });
+                        });
                     }}
                     className="flex items-center justify-center h-12 w-12 rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary transition-all duration-300 ease-in-out transform scale-100 hover:scale-100"
                   >
