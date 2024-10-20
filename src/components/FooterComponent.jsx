@@ -2,7 +2,6 @@ import React from "react";
 import SocialMediaFollow from "./SocialMediaFollow";
 
 const Footer = ({ data }) => {
-  console.log(data?.socialLinks?.links);
   return (
     <>
       <footer className="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] font-poppins">
