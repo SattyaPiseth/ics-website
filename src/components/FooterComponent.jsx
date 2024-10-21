@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMediaFollow from "./SocialMediaFollow";
+import ics_logo from "./../assets/ics_logo.png";
 
 const Footer = ({ data }) => {
   return (
@@ -15,12 +16,12 @@ const Footer = ({ data }) => {
                   className="mb-6 inline-block max-w-80 mx-auto sm:mx-0"
                 >
                   <img
-                    src={data?.logo}
+                    src={ics_logo}
                     alt={data?.alt_logo}
                     className="max-w-full dark:hidden h-auto"
                   />
                   <img
-                    src={data?.logo}
+                    src={ics_logo}
                     alt={data?.alt_logo}
                     className="max-w-full hidden dark:block h-auto"
                   />

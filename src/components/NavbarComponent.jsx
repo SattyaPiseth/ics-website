@@ -143,7 +143,7 @@ export default function NavbarComponent() {
                   className="dark:hidden w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
                 <img
-                  src="https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png"
+                  src={ics_logo}
                   alt="ICS Skillful Parenting Logo (Dark Mode)"
                   className="hidden dark:block w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
