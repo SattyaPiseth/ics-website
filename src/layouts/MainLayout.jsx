@@ -15,7 +15,7 @@ export default function MainLayout() {
           <Outlet />
         </section>
       </main>
-      <Footer data={footerData}/>
+      <Footer data={footerData} />
     </>
   );
 }

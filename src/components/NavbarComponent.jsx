@@ -11,9 +11,21 @@ import { BiSolidMessageDetail } from "react-icons/bi";
 import { TbCopyCheckFilled } from "react-icons/tb";
 import { GrMoney } from "react-icons/gr";
 import ics_logo from "./../assets/ics_logo.png";
-
+import navbarData from "./../json/layouts/navbar.json";
+import TranslateButtonComponent from "./translateButtonComponent";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
+
+  const sections = [
+    navbarData.about,
+    navbarData.contact,
+    navbarData.donate,
+    navbarData.expertise,
+    navbarData.partners,
+    navbarData.projects,
+    navbarData.resources,
+  ];
+  console.log(sections.map((s) => console.log(s)));
 
   // Accessibility-enhanced sections
   const expertiseSection = [
@@ -215,16 +227,16 @@ export default function NavbarComponent() {
                         href="about-us"
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                        About Us
+                        {navbarData?.about?.title}
                       </a>
                     </li>
+
                     <ul className="lg:block xl:hidden">
                       <DropdownComponent
                         label={"about & contact"}
                         dropDownSection={aboutUsSection}
                       />
                     </ul>
-
                     <ul>
                       <DropdownComponent
                         label={"Partners & Support"}
@@ -237,16 +249,20 @@ export default function NavbarComponent() {
                         dropDownSection={expertiseSection}
                       />
                     </ul>
+
                     <li className="group relative hidden xl:block">
                       <a
                         href="contact-us"
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                        Contact Us
+                        {navbarData?.contact?.title}
                       </a>
                     </li>
                   </ul>
                 </nav>
+              </div>
+              <div className="group relative hidden xl:block">
+                <TranslateButtonComponent />
               </div>
             </div>
           </div>

@@ -1,0 +1,10 @@
+{
+    "label" : ["about & contact","Partners & Support","Expertise & Resources"],
+    "about": {
+      "title": "About Us"
+    },
+    "contact": {
+      "title": "Contact Us"
+    }
+  }
+  
