@@ -12,7 +12,6 @@ import { TbCopyCheckFilled } from "react-icons/tb";
 import { GrMoney } from "react-icons/gr";
 import ics_logo from "./../assets/ics_logo.png";
 import navbarData from "./../json/layouts/navbar.json";
-import TranslateButtonComponent from "./translateButtonComponent";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
 
@@ -262,7 +261,7 @@ export default function NavbarComponent() {
                 </nav>
               </div>
               <div className="group relative hidden xl:block">
-                <TranslateButtonComponent/>
+               
               </div>
             </div>
           </div>
