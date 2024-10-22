@@ -25,7 +25,7 @@ const useClickOutside = (handler) => {
 // Language data mapping
 const languages = {
   EN: { label: "English", icon: english },
-  KH: { label: "Khmer ", icon: khmer },
+  KH: { label: "Khmer", icon: khmer },
 };
 
 const TranslateButton = () => {
@@ -50,8 +50,8 @@ const TranslateButton = () => {
   };
 
   return (
-    <div className="flex items-center gap-2">
-      <div ref={domNode} className="relative inline-block text-left">
+    <nav aria-label="Language switcher" className="flex items-center gap-2">
+      <section ref={domNode} className="relative inline-block text-left">
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
           onKeyDown={handleToggleDropdown}
@@ -59,13 +59,12 @@ const TranslateButton = () => {
           aria-expanded={dropdownOpen}
           className="flex items-center rounded-lg px-4 py-2 bg-primary text-white font-medium text-sm"
         >
-          {languages[language].label} <span className="pl-2">&#9662;</span>{" "}
-          {/* Down arrow */}
+          {languages[language].label} <span className="pl-2">&#9662;</span> {/* Down arrow */}
         </button>
 
         {/* Dropdown Menu */}
         {dropdownOpen && (
-          <div
+          <ul
             role="menu"
             className="absolute left-0 z-40 mt-1 w-full bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all"
             aria-hidden={!dropdownOpen}
@@ -78,24 +77,26 @@ const TranslateButton = () => {
                 onClick={() => handleLanguageChange(langCode)}
               />
             ))}
-          </div>
+          </ul>
         )}
-      </div>
-    </div>
+      </section>
+    </nav>
   );
 };
 
 // Dropdown item component
 const DropdownItem = ({ label, icon, onClick }) => {
   return (
-    <button
-      role="menuitem"
-      onClick={onClick}
-      className="flex items-center justify-start w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"
-    >
-      <img src={icon} alt={`${label} flag`} className="mr-2 w-6 h-6" />
-      <span className="flex-grow text-center">{label}</span>
-    </button>
+    <li role="none">
+      <button
+        role="menuitem"
+        onClick={onClick}
+        className="flex items-center justify-start w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"
+      >
+        <img src={icon} alt={`${label} flag`} className="mr-2 w-6 h-6" />
+        <span className="flex-grow text-center">{label}</span>
+      </button>
+    </li>
   );
 };
 
