@@ -262,7 +262,7 @@ export default function NavbarComponent() {
                 </nav>
               </div>
               <div className="group relative hidden xl:block">
-                <TranslateButtonComponent />
+                <TranslateButtonComponent/>
               </div>
             </div>
           </div>
