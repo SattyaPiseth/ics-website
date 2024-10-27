@@ -1,6 +1,5 @@
 import React from "react";
 import heroData from "./../json/layouts/hero_section.json";
-
 const HeroSection = () => {
   return (
     <div className="relative bg-white pb-[110px] pt-[30px] dark:bg-dark lg:pt-[80px]">
@@ -58,8 +57,8 @@ const HeroSection = () => {
                 ))}
               </ul>
               <div className="clients pt-16">
-                <h6 className="mb-6 flex items-center text-xs font-normal text-dark dark:text-gray-400">
-                  Some Of Our Clients
+                <h6 className="mb-6 flex items-center text-xs lg:text-base font-normal text-dark dark:text-gray-400">
+                  Some Of Our Donors
                   <span className="ml-3 inline-block h-px w-8 bg-dark dark:bg-gray-400"></span>
                 </h6>
                 <div className="flex items-center space-x-4">
@@ -130,7 +129,7 @@ export default HeroSection;
 const SingleImage = ({ href, imgSrc, alt }) => {
   return (
     <a href={href} className="flex w-full items-center justify-center">
-      <img src={imgSrc} alt={alt} className="h-10 w-full" />
+      <img src={imgSrc} alt={alt} className="h-auto w-full" />
     </a>
   );
 };

@@ -1,9 +1,10 @@
+
 {
     "title": "Let’s End Family Violence",
     "description": "We envision that Cambodian families solve their everyday problems without violence, communicate in a peaceful way, and protect their children. We aim to break the circle of intergenerational violence, and build a resilient, self-confident and balanced new generation.",
     "ctaButtons": [
       {
-        "label": "Get Started",
+        "label": "Donate Now",
         "href": "/#",
         "style": "bg-primary text-white hover:bg-primary-dark"
       },
@@ -17,17 +18,17 @@
     "clients": [
       {
         "href": "#",
-        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg",
+        "imgSrc": "src/assets/unicef_logo.png",
         "alt": "Ayroui"
       },
       {
         "href": "#",
-        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg",
+        "imgSrc": "src/assets/ics_dod.jpg",
         "alt": "Graygrids"
       },
       {
         "href": "#",
-        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg",
+        "imgSrc": "src/assets/new_zealand_embassy.jpg",
         "alt": "Uideck"
       }
     ],
