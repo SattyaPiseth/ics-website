@@ -1,0 +1,36 @@
+{
+    "title": "Let’s End Family Violence",
+    "description": "We envision that Cambodian families solve their everyday problems without violence, communicate in a peaceful way, and protect their children. We aim to break the circle of intergenerational violence, and build a resilient, self-confident and balanced new generation.",
+    "ctaButtons": [
+      {
+        "label": "Get Started",
+        "href": "/#",
+        "style": "bg-primary text-white hover:bg-primary-dark"
+      },
+      {
+        "label": "Download App",
+        "href": "/#",
+        "style": "text-dark hover:text-primary dark:text-white",
+        "icon": "download"
+      }
+    ],
+    "clients": [
+      {
+        "href": "#",
+        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg",
+        "alt": "Ayroui"
+      },
+      {
+        "href": "#",
+        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg",
+        "alt": "Graygrids"
+      },
+      {
+        "href": "#",
+        "imgSrc": "https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg",
+        "alt": "Uideck"
+      }
+    ],
+    "imageSrc": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/IMG_5283.jpeg"
+  }
+  

@@ -8,6 +8,7 @@ import { Gallery } from "./components/GalleryComponent";
 import Loader from "./components/LoaderComponent";
 import "react-toastify/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import HeroSection from "./components/HeroSection";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <Loader/>,
     children: [{
       path: "/",
-      element: <Gallery/>,
+      element: <HeroSection/>,
     }],
   },
 ]);

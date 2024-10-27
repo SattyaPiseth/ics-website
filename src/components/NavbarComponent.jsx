@@ -156,7 +156,7 @@ export default function NavbarComponent() {
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo (Dark Mode)"
-                  className="hidden dark:block w-64 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                  className="hidden dark:block w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
               </a>
             </div>
@@ -215,7 +215,7 @@ export default function NavbarComponent() {
                   )}
                 </button>
                 <nav
-                  className={`absolute right-0 px-6 shadow lg:block lg:w-full header-navbar z-40 w-full max-w-full rounded bg-white py-3 shadow-features duration-300 dark:bg-dark-2 xs:max-w-full lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
+                  className={`absolute right-0 px-6 shadow lg:block lg:w-full header-navbar z-50 w-full max-w-full rounded bg-white py-3 shadow-features duration-300 dark:bg-dark-2 xs:max-w-full lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
                     !open && "hidden"
                   }`}
                   id="navbarCollapse"

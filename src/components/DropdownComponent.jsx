@@ -47,7 +47,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
   }, []);
 
   return (
-    <li className="group relative" ref={dropdownRef}>
+    <li className="group relative z-50" ref={dropdownRef}>
       <button
         ref={buttonRef}
         onClick={() => setShowMegaMenu((prev) => !prev)}
