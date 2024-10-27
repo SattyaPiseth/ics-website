@@ -18,18 +18,18 @@
     "clients": [
       {
         "href": "#",
-        "imgSrc": "src/assets/unicef_logo.png",
-        "alt": "Ayroui"
+        "imgSrc": "./../assets/unicef_logo.png",
+        "alt": "unicef_logo"
       },
       {
         "href": "#",
-        "imgSrc": "src/assets/ics_dod.jpg",
-        "alt": "Graygrids"
+        "imgSrc": "./../assets/ics_dod.jpg",
+        "alt": "ics driver of development"
       },
       {
         "href": "#",
-        "imgSrc": "src/assets/new_zealand_embassy.jpg",
-        "alt": "Uideck"
+        "imgSrc": "./../assets/new_zealand_embassy.jpg",
+        "alt": "new zealand embassy"
       }
     ],
     "imageSrc": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/IMG_5283.jpeg"
