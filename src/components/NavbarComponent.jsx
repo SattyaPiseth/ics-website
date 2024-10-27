@@ -25,7 +25,6 @@ export default function NavbarComponent() {
     navbarData.projects,
     navbarData.resources,
   ];
-  console.log(sections.map((s) => console.log(s)));
 
   // Accessibility-enhanced sections
   const expertiseSection = [
@@ -261,7 +260,8 @@ export default function NavbarComponent() {
                   </ul>
                 </nav>
               </div>
-              <div className="group relative hidden xl:block">
+
+              <div className="group relative xs:relative right-14 sm:right-14 md:right-14 lg:right-0 xl:right-0 xl:block">
                 <TranslateButton />
               </div>
             </div>

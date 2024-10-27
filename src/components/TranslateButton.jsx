@@ -59,14 +59,15 @@ const TranslateButton = () => {
           aria-expanded={dropdownOpen}
           className="flex items-center rounded-lg px-4 py-2 bg-primary text-white font-medium text-sm"
         >
-          {languages[language].label} <span className="pl-2">&#9662;</span> {/* Down arrow */}
+          {languages[language].label} <span className="pl-2">&#9662;</span>{" "}
+          {/* Down arrow */}
         </button>
 
         {/* Dropdown Menu */}
         {dropdownOpen && (
           <ul
             role="menu"
-            className="absolute left-0 z-40 mt-1 w-full bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all"
+            className="absolute lg:right-0 left-0 z-40 mt-1 w-full lg:w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all"
             aria-hidden={!dropdownOpen}
           >
             {Object.entries(languages).map(([langCode, { label, icon }]) => (

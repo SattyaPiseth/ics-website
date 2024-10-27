@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 
 module.exports = withMT({
-  darkMode: 'class', // enables class-based dark mode
+  darkMode: "class", // enables class-based dark mode
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
   theme: {
     screens: {
@@ -25,24 +25,28 @@ module.exports = withMT({
     },
     extend: {
       fontFamily: {
-        moul: ['Moul', 'cursive'], // Add Moul font
-        poppins: ['Poppins', 'sans-serif'], // Add Poppins font
+        moul: ["Moul", "cursive"], // Add Moul font
+        poppins: ["Poppins", "sans-serif"], // Add Poppins font
       },
       colors: {
         primary: {
-          DEFAULT: '#0070C0',  // A blue shade from the logo
+          DEFAULT: "#0070C0", // A blue shade from the logo
         },
         secondary: {
-          DEFAULT: '#FF0000',  // A red shade from the logo
+          DEFAULT: "#FF0000", // A red shade from the logo
         },
-        white: '#FFFFFF',     // White for the text in the "ICS"
-        dark: '#202124',      // A dark color for background/contrast (if needed)
+        white: "#FFFFFF", // White for the text in the "ICS"
+        dark: "#202124", // A dark color for background/contrast (if needed)
+      },
+      spacing: {
+        '14': '3.5rem',
+        '40': '10rem', // Adjust as per dropdown width needs
       },
     },
   },
   plugins: [
     require("tailgrids/plugin"),
     require("@tailwindcss/line-clamp"),
-    require('tailwind-scrollbar'), // Add the line-clamp plugin
+    require("tailwind-scrollbar"), // Add the line-clamp plugin
   ],
 });
