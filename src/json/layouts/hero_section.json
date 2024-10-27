@@ -18,17 +18,17 @@
     "clients": [
       {
         "href": "#",
-        "imgSrc": "/assets/unicef_logo.png",
+        "imgSrc": "/unicef_logo.png",
         "alt": "unicef_logo"
       },
       {
         "href": "#",
-        "imgSrc": "/assets/ics_dod.jpg",
+        "imgSrc": "/ics_dod.jpg",
         "alt": "ics driver of development"
       },
       {
         "href": "#",
-        "imgSrc": "/assets/new_zealand_embassy.jpg",
+        "imgSrc": "/new_zealand_embassy.jpg",
         "alt": "new zealand embassy"
       }
     ],
