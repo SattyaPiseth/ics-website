@@ -4,7 +4,7 @@ import blogData from "./../json/layouts/blog.json"; // adjust the path as needed
 const BlogComponent = () => {
   return (
     <>
-      <section className="bg-white pb-10 pt-14 dark:bg-dark lg:pb-20 lg:pt-[120px] overflow-hidden">
+      <section className="bg-white pb-10 pt-14 dark:bg-dark lg:pb-20 lg:pt-[120px] overflow-hidden" data-aos="fade-up">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
