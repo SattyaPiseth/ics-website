@@ -35,12 +35,11 @@ const Testimonial = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute left-0 right-0 z-10 flex items-center justify-center gap-5 sm:bottom-0">
+        <div className="mt-6 flex items-center justify-center gap-5">
           <button
             className="prev-arrow cursor-pointer flex h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none"
             onClick={handlePrev}
           >
-            {/* SVG Icon for Previous */}
             <svg
               width="20"
               height="21"
@@ -59,7 +58,6 @@ const Testimonial = () => {
             className="next-arrow cursor-pointer flex h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none"
             onClick={handleNext}
           >
-            {/* SVG Icon for Next */}
             <svg
               width="20"
               height="21"
