@@ -4,7 +4,10 @@ import blogData from "./../json/layouts/blog.json"; // adjust the path as needed
 const BlogComponent = () => {
   return (
     <>
-      <section className="bg-white pb-10 pt-14 dark:bg-dark lg:pb-20 lg:pt-[120px] overflow-hidden" data-aos="fade-up">
+      <section
+        className="bg-white pb-10 pt-14 dark:bg-dark lg:pb-20 lg:pt-[120px] overflow-hidden"
+        data-aos="fade-up"
+      >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -44,7 +47,11 @@ export default BlogComponent;
 
 const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3" data-aos="flip-down">
+    <div
+      className="w-full px-4 md:w-1/2 lg:w-1/3"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div className="mb-10 w-full">
         <div className="mb-8 overflow-hidden rounded">
           <img src={image} alt="" className="w-full" />
