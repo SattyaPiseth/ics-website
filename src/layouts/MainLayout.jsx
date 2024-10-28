@@ -22,7 +22,7 @@ export default function MainLayout() {
     <>
       <StickyBar />
       <Navbar />
-      <main className="bg-gray-50 overflow-hidden">
+      <main className="bg-gray-50">
         <section>
           <Outlet />
         </section>
