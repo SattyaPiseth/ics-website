@@ -72,7 +72,7 @@ const HeroSection = () => {
           <div className="hidden px-4 lg:block lg:w-1/12"></div>
           <div className="w-full px-4 lg:w-6/12">
             <div className="lg:ml-auto lg:text-right">
-              <div className="relative z-10 inline-block pt-11 lg:pt-0" data-aos="fade-left">
+              <div className="relative z-10 inline-block pt-11 lg:pt-0">
                 <img
                   src={heroData.imageSrc}
                   alt="hero"
