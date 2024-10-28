@@ -61,7 +61,7 @@ const HeroSection = () => {
                   Some Of Our Donors
                   <span className="ml-3 inline-block h-px w-8 bg-dark dark:bg-gray-400"></span>
                 </h6>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4" data-aos="fade-left">
                   {heroData.clients.map((client, index) => (
                     <SingleImage key={index} href={client.href} imgSrc={client.imgSrc} alt={client.alt} />
                   ))}
