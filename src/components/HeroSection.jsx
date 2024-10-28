@@ -2,18 +2,18 @@ import React from "react";
 import heroData from "./../json/layouts/hero_section.json";
 const HeroSection = () => {
   return (
-    <div className="relative bg-white pb-[110px] pt-[30px] dark:bg-dark lg:pt-[80px]">
+    <div className="relative bg-white pb-[110px] pt-[30px] dark:bg-dark lg:pt-[120px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-5/12">
             <div className="hero-content">
-              <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
+              <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl" data-aos="fade-up">
                 {heroData.title}
               </h1>
-              <p className="mb-8 max-w-[480px] text-base lg:text-lg text-dark dark:text-gray-400">
+              <p className="mb-8 max-w-[480px] text-base lg:text-lg text-dark dark:text-gray-400" data-aos="fade-up">
                 {heroData.description}
               </p>
-              <ul className="flex flex-wrap items-center">
+              <ul className="flex flex-wrap items-center" data-aos="fade-right">
                 {heroData.ctaButtons.map((button, index) => (
                   <li key={index}>
                     <a
@@ -56,7 +56,7 @@ const HeroSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="clients pt-16">
+              <div className="clients pt-16" data-aos="fade-right">
                 <h6 className="mb-6 flex items-center text-xs lg:text-base font-normal text-dark dark:text-gray-400">
                   Some Of Our Donors
                   <span className="ml-3 inline-block h-px w-8 bg-dark dark:bg-gray-400"></span>

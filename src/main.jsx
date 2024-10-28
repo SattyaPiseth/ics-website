@@ -9,6 +9,7 @@ import Loader from "./components/LoaderComponent";
 import "react-toastify/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import HeroSection from "./components/HeroSection";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     errorElement: <Loader/>,
     children: [{
       path: "/",
-      element: <HeroSection/>,
+      element: <App/>,
     }],
   },
 ]);
