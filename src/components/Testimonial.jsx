@@ -18,7 +18,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section className="pb-20 pt-20 dark:bg-dark lg:pb-[120px] lg:pt-[120px]">
+    <section className="pb-20 pt-20 dark:bg-dark lg:pb-[120px] lg:pt-[120px]" data-aos="fade-left">
       <div className="container mx-auto">
         <Swiper
           slidesPerView={1}
