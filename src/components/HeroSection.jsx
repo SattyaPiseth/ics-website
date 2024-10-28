@@ -24,7 +24,7 @@ const HeroSection = () => {
                   <li key={index}>
                     <a
                       href={button.href}
-                      className={`inline-flex items-center justify-center rounded-md px-6 py-3 text-center text-base font-medium ${button.style} lg:px-7`}
+                      className={`inline-flex items-center justify-center rounded-md px-4 py-3 text-center text-base font-medium ${button.style} sm:px-6 md:px-6 lg:px-7`}
                     >
                       {button.icon === "download" && (
                         <span className="mr-2">
