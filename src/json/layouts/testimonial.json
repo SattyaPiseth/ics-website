@@ -1,7 +1,7 @@
 [
     {
       "image": "/testimonial.png",
-      "reviewImg": "/ics_logo.png",
+      "reviewImg": "https://cdn.tailgrids.com/2.0/image/marketing/images/testimonials/testimonial-01/lineicon.svg",
       "reviewAlt": "lineicon",
       "details": "I think spending more time with my children and comforting them when they feel upset about things is the right thing to do.",
       "name": "A Mother",
