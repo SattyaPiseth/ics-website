@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import BlogComponent from "./components/BlogComponent";
 import HeroSection from "./components/HeroSection";
 
