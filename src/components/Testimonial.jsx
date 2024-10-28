@@ -123,7 +123,7 @@ const SingleTestimonial = ({
                 <img
                   src={reviewImg}
                   alt={reviewAlt}
-                  className="rounded-md shadow-sm"
+                  className="rounded-md"
                 />
               </div>
               <p className="mb-11 text-base font-normal italic leading-[1.81] text-body-color dark:text-dark-6 sm:text-[22px]">
