@@ -48,28 +48,24 @@ export default BlogComponent;
 const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
   return (
     <div
-      className="w-full px-4 md:w-1/3 lg:w-1/5"
+      className="w-full px-5 md:w-1/2 lg:w-1/4"
       data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
     >
-      <div className="mb-10 w-full">
-        <div className="mb-8 overflow-hidden rounded">
-          <img src={image} alt="" className="w-full" />
+      <div className="mb-10 w-full bg-white rounded-lg shadow-md dark:bg-dark overflow-hidden transition-transform transform hover:scale-105 duration-200">
+        <div className="overflow-hidden h-48"> {/* Fixed height for image */}
+          <img src={image} alt={CardTitle} className="w-full h-full object-cover" />
         </div>
-        <div>
+        <div className="p-4">
           {date && (
-            <span className="mb-5 inline-block rounded bg-primary px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
+            <span className="mb-2 inline-block rounded bg-primary px-3 py-1 text-center text-xs font-semibold leading-loose text-white">
               {date}
             </span>
           )}
-          <h3>
-            <a
-              href="/#"
-              className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
-            >
-              {CardTitle}
-            </a>
+          <h3 className="mb-2 text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl">
+            {CardTitle}
           </h3>
-          <p className="text-base text-body-color dark:text-dark-6">
+          <p className="text-base text-body-color dark:text-dark-6 line-clamp-4">
             {CardDescription}
           </p>
         </div>
