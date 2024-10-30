@@ -142,7 +142,7 @@ export default function NavbarComponent() {
   ];
 
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <div className="bg-white dark:bg-dark font-poppins">
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
