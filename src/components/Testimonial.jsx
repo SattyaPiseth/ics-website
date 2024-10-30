@@ -37,7 +37,7 @@ const Testimonial = () => {
         </Swiper>
         <div className="flex items-center justify-center gap-5">
           <button
-            className="prev-arrow cursor-pointer flex h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none"
+            className="prev-arrow cursor-pointer h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none hidden md:flex"
             onClick={handlePrev}
           >
             <svg
@@ -55,7 +55,7 @@ const Testimonial = () => {
             </svg>
           </button>
           <button
-            className="next-arrow cursor-pointer flex h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none"
+            className="next-arrow cursor-pointer h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none hidden md:flex"
             onClick={handleNext}
           >
             <svg
