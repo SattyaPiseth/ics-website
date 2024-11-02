@@ -4,12 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./layouts/MainLayout";
 import { ThemeProvider } from "@material-tailwind/react";
-import { Gallery } from "./components/GalleryComponent";
 import Loader from "./components/LoaderComponent";
 import "react-toastify/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import HeroSection from "./components/HeroSection";
 import App from "./App";
+import './i18n.js';
 
 const router = createBrowserRouter([
   {

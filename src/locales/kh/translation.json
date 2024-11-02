@@ -1,0 +1,13 @@
+{
+    "label" : {
+      "about&contact" : "អំពីពួកយើង និង ទំនាក់ទំនង",
+      "partners&support" : "ដៃគូសហការ និង ម្ចាស់ជំនួយ",
+      "expertise&resources" : "ជំនាញ និង ធនធាន"
+    },
+    "about": {
+      "title": "អំពីពួកយើង"
+    },
+    "contact": {
+      "title": "ទំនាក់ទំនង"
+    }
+}

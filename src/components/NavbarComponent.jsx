@@ -11,20 +11,12 @@ import { BiSolidMessageDetail } from "react-icons/bi";
 import { TbCopyCheckFilled } from "react-icons/tb";
 import { GrMoney } from "react-icons/gr";
 import ics_logo from "./../assets/ics_logo.png";
-import navbarData from "./../json/layouts/navbar.json";
 import TranslateButton from "./TranslateButton";
+import { useTranslation } from "react-i18next";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
-  const sections = [
-    navbarData.about,
-    navbarData.contact,
-    navbarData.donate,
-    navbarData.expertise,
-    navbarData.partners,
-    navbarData.projects,
-    navbarData.resources,
-  ];
 
   // Accessibility-enhanced sections
   const expertiseSection = [
@@ -226,25 +218,26 @@ export default function NavbarComponent() {
                         href="about-us"
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                        {navbarData?.about?.title}
+                        {/* {navbarData?.about?.title} */}
+                        {`${t('about.title')}`}
                       </a>
                     </li>
 
                     <ul className="lg:block xl:hidden">
                       <DropdownComponent
-                        label={"about & contact"}
+                        label={t('label.about&contact')}
                         dropDownSection={aboutUsSection}
                       />
                     </ul>
                     <ul>
                       <DropdownComponent
-                        label={"Partners & Support"}
+                        label={t('label.partners&support')}
                         dropDownSection={partnersSection}
                       />
                     </ul>
                     <ul>
                       <DropdownComponent
-                        label={"Expertise & Resources"}
+                        label={t('label.expertise&resources')}
                         dropDownSection={expertiseSection}
                       />
                     </ul>
@@ -254,7 +247,8 @@ export default function NavbarComponent() {
                         href="contact-us"
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                        {navbarData?.contact?.title}
+                        {/* {navbarData?.contact?.title} */}
+                        {`${t('contact.title')}`}
                       </a>
                     </li>
                   </ul>

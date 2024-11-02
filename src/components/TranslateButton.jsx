@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import i18n from "i18next"; // Import your i18n instance
 import khmer from "./../assets/khmer.png";
 import english from "./../assets/english.png";
 
@@ -24,19 +25,23 @@ const useClickOutside = (handler) => {
 
 // Language data mapping
 const languages = {
-  EN: { label: "English", icon: english },
-  KH: { label: "Khmer", icon: khmer },
+  EN: { label: "English", icon: english, i18nKey: "en" },
+  KH: { label: "Khmer", icon: khmer, i18nKey: "kh" },
 };
 
 const TranslateButton = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("i18nextLng") === "en" ? "EN" : "KH"
+  );
 
   // Use the custom hook to handle outside clicks
   const domNode = useClickOutside(() => setDropdownOpen(false));
 
   // Handle language selection
   const handleLanguageChange = (lang) => {
+    const i18nLanguageKey = languages[lang].i18nKey;
+    i18n.changeLanguage(i18nLanguageKey); // Change language using i18n
     setLanguage(lang);
     setDropdownOpen(false);
   };
@@ -57,7 +62,7 @@ const TranslateButton = () => {
           onKeyDown={handleToggleDropdown}
           aria-haspopup="true"
           aria-expanded={dropdownOpen}
-          className="flex items-center rounded-lg px-3 py-1 sm:px-3 sm:py-1.5 bg-primary text-white font-medium text-xs sm:text-sm "
+          className="flex items-center rounded-lg px-3 py-1 sm:px-3 sm:py-1.5 bg-primary text-white font-medium text-xs sm:text-sm"
         >
           {languages[language].label} <span className="pl-2">&#9662;</span>{" "}
           {/* Down arrow */}
