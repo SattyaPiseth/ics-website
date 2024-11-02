@@ -3,6 +3,7 @@ import i18n from "i18next"; // Import your i18n instance
 import khmer from "./../assets/khmer.png";
 import english from "./../assets/english.png";
 
+// Hook for handling outside clicks to close the dropdown
 const useClickOutside = (handler) => {
   const domNode = useRef();
 
@@ -22,6 +23,7 @@ const useClickOutside = (handler) => {
   return domNode;
 };
 
+// Language data mapping
 const languages = {
   EN: { label: "English", icon: english, i18nKey: "en" },
   KH: { label: "Khmer", icon: khmer, i18nKey: "kh" },
@@ -33,18 +35,21 @@ const TranslateButton = () => {
     localStorage.getItem("i18nextLng") === "en" ? "EN" : "KH"
   );
 
+  // Use the custom hook to handle outside clicks
   const domNode = useClickOutside(() => setDropdownOpen(false));
 
+  // Handle language selection
   const handleLanguageChange = (lang) => {
     const i18nLanguageKey = languages[lang].i18nKey;
-    i18n.changeLanguage(i18nLanguageKey);
+    i18n.changeLanguage(i18nLanguageKey); // Change language using i18n
     setLanguage(lang);
     setDropdownOpen(false);
   };
 
+  // Toggle dropdown with keyboard accessibility
   const handleToggleDropdown = (event) => {
     if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
+      event.preventDefault(); // Prevent scrolling the page
       setDropdownOpen((prev) => !prev);
     }
   };
@@ -59,13 +64,17 @@ const TranslateButton = () => {
           aria-expanded={dropdownOpen}
           className="flex items-center rounded-lg px-3 py-1 sm:px-3 sm:py-1.5 bg-primary text-white font-medium text-xs sm:text-sm"
         >
-          {languages[language].label} <span className="pl-2">&#9662;</span>
+          {languages[language].label} <span className="pl-2">&#9662;</span>{" "}
+          {/* Down arrow */}
         </button>
 
+        {/* Dropdown Menu */}
         {dropdownOpen && (
           <ul
             role="menu"
-            className={`absolute block left-0 lg:right-0 z-50 mt-1 w-28 sm:w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all`}
+            className={`absolute ${
+              dropdownOpen ? "block" : "hidden"
+            } left-0 lg:right-0 z-50 mt-1 w-28 sm:w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all`}
             aria-hidden={!dropdownOpen}
           >
             {Object.entries(languages).map(([langCode, { label, icon }]) => (
@@ -83,6 +92,7 @@ const TranslateButton = () => {
   );
 };
 
+// Dropdown item component
 const DropdownItem = ({ label, icon, onClick }) => {
   return (
     <li role="none">
