@@ -43,6 +43,7 @@ const TranslateButton = () => {
     const i18nLanguageKey = languages[lang].i18nKey;
     i18n.changeLanguage(i18nLanguageKey); // Change language using i18n
     setLanguage(lang);
+    localStorage.setItem("i18nextLng", i18nLanguageKey); // Update local storage
     setDropdownOpen(false);
   };
 
@@ -72,10 +73,9 @@ const TranslateButton = () => {
         {dropdownOpen && (
           <ul
             role="menu"
-            className={`absolute ${
-              dropdownOpen ? "block" : "hidden"
-            } left-0 lg:right-0 z-50 mt-1 w-28 sm:w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg transition-all`}
+            className={`absolute transition-opacity duration-300 ease-in-out ${dropdownOpen ? "opacity-100" : "opacity-0"} left-0 lg:right-0 z-50 mt-1 w-28 sm:w-32 bg-white dark:bg-gray-800 rounded-md shadow-lg`}
             aria-hidden={!dropdownOpen}
+            style={{ display: dropdownOpen ? 'block' : 'none' }} // Prevents display issues
           >
             {Object.entries(languages).map(([langCode, { label, icon }]) => (
               <DropdownItem
