@@ -25,7 +25,7 @@ module.exports = withMT({
     },
     extend: {
       fontFamily: {
-        moul: ["Moul", "cursive"], // Add Moul font
+        suwannaphum: ["Suwannaphum", "serif"],// Add Moul font
         poppins: ["Poppins", "sans-serif"], // Add Poppins font
       },
       colors: {

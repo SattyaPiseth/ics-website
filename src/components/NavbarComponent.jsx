@@ -13,9 +13,11 @@ import { GrMoney } from "react-icons/gr";
 import ics_logo from "./../assets/ics_logo.png";
 import TranslateButton from "./TranslateButton";
 import { useTranslation } from "react-i18next";
+import useFontClass from "../utils/useFontClass";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
+  const {fontClass} = useFontClass();
 
 
   // Accessibility-enhanced sections
@@ -152,7 +154,7 @@ export default function NavbarComponent() {
                 />
               </a>
             </div>
-            <div className="flex w-full items-center justify-end px-4">
+            <div className={`flex w-full items-center justify-end px-4 ${fontClass}`}>
               <div>
                 <button
                   onClick={() => setOpen(!open)}
@@ -163,7 +165,7 @@ export default function NavbarComponent() {
                   aria-label="Toggle navigation"
                 >
                   {open ? (
-                    <button className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 text-dark-6 duration-200 hover:text-dark dark:hover:text-white">
+                    <span className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 text-dark-6 duration-200 hover:text-dark dark:hover:text-white">
                       <svg
                         width="10"
                         height="10"
@@ -186,7 +188,7 @@ export default function NavbarComponent() {
                           </clipPath>
                         </defs>
                       </svg>
-                    </button>
+                    </span>
                   ) : (
                     <svg
                       stroke="currentColor"
