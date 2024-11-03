@@ -62,7 +62,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription }) => {
               {date}
             </span>
           )}
-          <h3 className="mb-2 text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl">
+          <h3 className="mb-2 text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl line-clamp-3">
             {CardTitle}
           </h3>
           <p className="text-base text-body-color dark:text-dark-6 line-clamp-4">
