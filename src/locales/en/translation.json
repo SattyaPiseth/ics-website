@@ -9,5 +9,9 @@
     },
     "contact": {
       "title": "Contact Us"
+    },
+    "language" : {
+      "english" : "English",
+      "khmer" : "Khmer"
     }
 }

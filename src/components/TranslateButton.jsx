@@ -25,8 +25,8 @@ const useClickOutside = (handler) => {
 
 // Language data mapping
 const languages = {
-  EN: { label: "English", icon: english, i18nKey: "en" },
-  KH: { label: "Khmer", icon: khmer, i18nKey: "kh" },
+  EN: { label: "language.english", icon: english, i18nKey: "en" },
+  KH: { label: "language.khmer", icon: khmer, i18nKey: "kh" },
 };
 
 const TranslateButton = () => {
@@ -65,7 +65,7 @@ const TranslateButton = () => {
           aria-expanded={dropdownOpen}
           className="flex items-center rounded-lg px-3 py-1 sm:px-3 sm:py-1.5 bg-primary text-white font-medium text-xs sm:text-sm"
         >
-          {languages[language].label} <span className="pl-2">&#9662;</span>{" "}
+          {i18n.t(languages[language].label)} <span className="pl-2">&#9662;</span>{" "}
           {/* Down arrow */}
         </button>
 
@@ -80,7 +80,7 @@ const TranslateButton = () => {
             {Object.entries(languages).map(([langCode, { label, icon }]) => (
               <DropdownItem
                 key={langCode}
-                label={label}
+                label={i18n.t(label)} // Get the label using i18n.t
                 icon={icon}
                 onClick={() => handleLanguageChange(langCode)}
               />
