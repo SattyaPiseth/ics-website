@@ -2,7 +2,7 @@ import React from "react";
 import heroData from "./../json/layouts/hero_section.json";
 const HeroSection = () => {
   return (
-    <div className="relative bg-white pb-[130px] pt-[30px] dark:bg-dark lg:pt-[120px]">
+    <div className="relative bg-white pb-[110px] pt-[30px] dark:bg-dark lg:pt-[120px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-5/12">
