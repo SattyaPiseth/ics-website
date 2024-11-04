@@ -13,5 +13,110 @@
     "language" : {
       "english" : "English",
       "khmer" : "Khmer"
-    }
+    },
+    "expertiseSection" : [
+      {
+        
+          "title": "Expertise",
+          "items": [
+            {
+              "href": "#",
+              "title": "Skillful Parenting Program",
+              "description": "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
+              "Icon": "TbCopyCheckFilled"
+            },
+            {
+              "href": "#",
+              "title": "Family Budgeting",
+              "description": "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
+              "Icon": "GrMoney"
+            }
+          ]
+        },
+        {
+          "title": "Projects",
+          "items": [
+            {
+              "href": "#",
+              "title": "Tailored Training Services",
+              "description": "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
+              "Icon": "FaChartLine"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "items": [
+            {
+              "href": "#",
+              "title": "Skillful Parenting Guide",
+              "description": "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
+              "Icon": "FaFolderOpen"
+            }
+          ]
+        }
+      
+    ],
+    
+      "partnersSection": [
+        {
+          "title": "Partners & Donors",
+          "items": [
+            {
+              "href": "#",
+              "title": "Collaborative Partnerships",
+              "description": "Discover how we work with organizations to end violence in families.",
+              "Icon": "FaHandshakeSimple"
+            }
+          ]
+        },
+        {
+          "title": "Donate",
+          "items": [
+            {
+              "href": "#",
+              "title": "Support Skilful Parenting",
+              "description": "Help us improve family lives and protect children and women from violence.",
+              "Icon": "FaDonate"
+            }
+          ]
+        }
+      ],
+      "aboutUsSection": [
+        {
+          "title": "About us",
+          "items": [
+            {
+              "href": "#",
+              "title": "Who We Are",
+              "description": "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
+              "Icon": "FaBuildingNgo"
+            },
+            {
+              "href": "#",
+              "title": "Our Mission",
+              "description": "ICS-SP is dedicated to ending family violence and improving the well-being of children and women in Cambodia through collaborative efforts and skillful parenting programs.",
+              "Icon": "FaListCheck"
+            },
+            {
+              "href": "#",
+              "title": "Our Vision",
+              "description": "We envision a society where every family thrives in a violence-free environment, fostering positive relationships and ensuring a safe and nurturing space for children and women.",
+              "Icon": "FaRoadCircleCheck"
+            }
+          ]
+        },
+        {
+          "title": "Contact us",
+          "items": [
+            {
+              "href": "#",
+              "title": "Get in Touch with Us",
+              "description": "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
+              "Icon": "BiSolidMessageDetail"
+            }
+          ]
+        }
+      ]    
+    
 }
