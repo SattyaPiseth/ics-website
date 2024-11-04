@@ -18,7 +18,7 @@ export function CarouselComponent() {
   };
 
   return (
-    <section className="container mx-auto py-12 px-5 my-3" data-aos="zoom-in">
+    <section className="container mx-auto py-12 px-5 my-5" data-aos="zoom-in">
       <Carousel
         activeIndex={activeIndex}
         length={slides.length}

@@ -12,7 +12,7 @@ function App() {
       <CarouselComponent/>
       <BlogComponent />
       <Testimonial />
-      <section className="container mx-auto py-10 bg-gray-50 dark:bg-dark">
+      <section className="container mx-auto py-10dark:bg-dark">
         <div className="-mx-4 flex flex-wrap">
           {videoData.map((video, index) => (
             <VideoComponent
