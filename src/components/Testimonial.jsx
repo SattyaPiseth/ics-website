@@ -117,11 +117,11 @@ const SingleTestimonial = ({
           </div>
           <div className="w-full">
             <div>
-              <div className="mb-7">
+              <div className="mb-5">
                 <img
                   src={reviewImg}
                   alt={reviewAlt}
-                  className="rounded-md"
+                  className="rounded-md w-1/5 h-auto"
                 />
               </div>
               <p className="mb-11 text-base font-normal italic leading-[1.81] text-body-color dark:text-dark-6 sm:text-[22px]">
