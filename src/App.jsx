@@ -1,4 +1,5 @@
 import BlogComponent from "./components/BlogComponent";
+import { CarouselComponent } from "./components/CarouselComponent";
 import HeroSection from "./components/HeroSection";
 import Testimonial from "./components/Testimonial";
 import VideoComponent from "./components/VideoComponent";
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <HeroSection />
+      <CarouselComponent/>
       <BlogComponent />
       <Testimonial />
       <section className="container mx-auto py-10 bg-gray-50 dark:bg-dark">
