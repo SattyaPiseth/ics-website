@@ -68,7 +68,7 @@ const HeroSection = () => {
                 ))}
               </ul>
               <div className="clients pt-16" data-aos="fade-up">
-                <h6 className="mb-6 flex items-center text-xs lg:text-base font-normal text-dark dark:text-gray-400">
+                {/* <h6 className="mb-6 flex items-center text-xs lg:text-base font-normal text-dark dark:text-gray-400">
                   Some Of Our Donors
                   <span className="ml-3 inline-block h-px w-8 bg-dark dark:bg-gray-400"></span>
                 </h6>
@@ -84,7 +84,7 @@ const HeroSection = () => {
                       alt={client.alt}
                     />
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
