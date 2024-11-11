@@ -117,6 +117,19 @@
             }
           ]
         }
-      ]    
-    
+      ],
+      "footerSection" : [
+        {
+          "title" : "All Resources"
+        },
+        {
+          "title" : "About & Contact"
+        },
+        {
+          "title" : "Partners & Support"
+        },
+        {
+          "title" : "Follow Us On"
+        }
+      ]
 }
