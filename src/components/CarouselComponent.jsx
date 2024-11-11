@@ -20,17 +20,17 @@ export function CarouselComponent() {
   return (
     <section className="container mx-auto py-12 px-5" data-aos="zoom-in">
       <Carousel
-        activeIndex={activeIndex}
+        activeindex={activeIndex}
         length={slides.length}
         autoplay={true}
         loop={true}
         className="rounded-xl h-[500px] md:h-[600px] lg:h-[700px]"
-        nextButton={
+        nextbutton={
           <Button onClick={handleNextSlide} variant="text">
             Next
           </Button>
         }
-        prevButton={
+        prevbutton={
           <Button onClick={handlePrevSlide} variant="text">
             Previous
           </Button>

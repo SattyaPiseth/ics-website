@@ -1,15 +1,5 @@
 import React, { useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import { FaChartLine, FaDonate, FaFolderOpen } from "react-icons/fa";
-import {
-  FaBuildingNgo,
-  FaHandshakeSimple,
-  FaListCheck,
-  FaRoadCircleCheck,
-} from "react-icons/fa6";
-import { BiSolidMessageDetail } from "react-icons/bi";
-import { TbCopyCheckFilled } from "react-icons/tb";
-import { GrMoney } from "react-icons/gr";
 import ics_logo from "./../assets/ics_logo.png";
 import TranslateButton from "./TranslateButton";
 import { useTranslation } from "react-i18next";
@@ -17,123 +7,7 @@ import useFontClass from "../utils/useFontClass";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
-  const {fontClass} = useFontClass();
-
-
-  // Accessibility-enhanced sections
-  const expertiseSection = [
-    {
-      title: "Expertise",
-      items: [
-        {
-          href: "#",
-          title: "Skillful Parenting Program",
-          description:
-            "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
-          Icon: TbCopyCheckFilled,
-        },
-        {
-          href: "#",
-          title: "Family Budgeting",
-          description:
-            "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
-          Icon: GrMoney,
-        },
-      ],
-    },
-    {
-      title: "Projects",
-      items: [
-        {
-          href: "#",
-          title: "Tailored Training Services",
-          description:
-            "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
-          Icon: FaChartLine,
-        },
-      ],
-    },
-    {
-      title: "Resources",
-      items: [
-        {
-          href: "#",
-          title: "Skillful Parenting Guide",
-          description:
-            "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
-          Icon: FaFolderOpen,
-        },
-      ],
-    },
-  ];
-
-  const partnersSection = [
-    {
-      title: "Partners & Donors",
-      items: [
-        {
-          href: "#",
-          title: "Collaborative Partnerships",
-          description:
-            "Discover how we work with organizations to end violence in families.",
-          Icon: FaHandshakeSimple,
-        },
-      ],
-    },
-    {
-      title: "Donate",
-      items: [
-        {
-          href: "#",
-          title: "Support Skilful Parenting",
-          description:
-            "Help us improve family lives and protect children and women from violence.",
-          Icon: FaDonate,
-        },
-      ],
-    },
-  ];
-
-  const aboutUsSection = [
-    {
-      title: "About us",
-      items: [
-        {
-          href: "#",
-          title: "Who We Are",
-          description:
-            "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
-          Icon: FaBuildingNgo,
-        },
-        {
-          href: "#",
-          title: "Our Mission",
-          description:
-            "ICS-SP is dedicated to ending family violence and improving the well-being of children and women in Cambodia through collaborative efforts and skillful parenting programs.",
-          Icon: FaListCheck,
-        },
-        {
-          href: "#",
-          title: "Our Vision",
-          description:
-            "We envision a society where every family thrives in a violence-free environment, fostering positive relationships and ensuring a safe and nurturing space for children and women.",
-          Icon: FaRoadCircleCheck,
-        },
-      ],
-    },
-    {
-      title: "Contact us",
-      items: [
-        {
-          href: "#",
-          title: "Get in Touch with Us",
-          description:
-            "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
-          Icon: BiSolidMessageDetail,
-        },
-      ],
-    },
-  ];
+  const { fontClass } = useFontClass();
 
   return (
     <header className="sticky top-0 z-50">
@@ -154,7 +28,9 @@ export default function NavbarComponent() {
                 />
               </a>
             </div>
-            <div className={`flex w-full items-center justify-end px-4 ${fontClass}`}>
+            <div
+              className={`flex w-full items-center justify-end px-4 ${fontClass}`}
+            >
               <div>
                 <button
                   onClick={() => setOpen(!open)}
@@ -221,26 +97,32 @@ export default function NavbarComponent() {
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {/* {navbarData?.about?.title} */}
-                        {`${t('about.title')}`}
+                        {`${t("about.title")}`}
                       </a>
                     </li>
 
                     <ul className="lg:block xl:hidden">
                       <DropdownComponent
-                        label={t('label.about&contact')}
-                        dropDownSection={aboutUsSection}
+                        label={t("label.about&contact")}
+                        dropDownSection={t("aboutUsSection", {
+                          returnObjects: true,
+                        })}
                       />
                     </ul>
                     <ul>
                       <DropdownComponent
-                        label={t('label.partners&support')}
-                        dropDownSection={partnersSection}
+                        label={t("label.partners&support")}
+                        dropDownSection={t("partnersSection", {
+                          returnObjects: true,
+                        })}
                       />
                     </ul>
                     <ul>
                       <DropdownComponent
-                        label={t('label.expertise&resources')}
-                        dropDownSection={expertiseSection}
+                        label={t("label.expertise&resources")}
+                        dropDownSection={t("expertiseSection", {
+                          returnObjects: true,
+                        })}
                       />
                     </ul>
 
@@ -250,7 +132,7 @@ export default function NavbarComponent() {
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {/* {navbarData?.contact?.title} */}
-                        {`${t('contact.title')}`}
+                        {`${t("contact.title")}`}
                       </a>
                     </li>
                   </ul>
