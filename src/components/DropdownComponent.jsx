@@ -36,7 +36,7 @@ const DropdownItem = ({ href, title, description, IconName }) => {
         <Icon size={24} aria-hidden="true" />
       </div>
       <div className="flex-1">
-        <h5 className="text-sm xl:text-base font-semibold text-dark dark:text-white">
+        <h5 className="text-sm xl:text-base font-semibold text-gray-700 tracking-wide leading-loose dark:text-white">
           {title}
         </h5>
         <p className="text-xs xl:text-sm text-body-color dark:text-body-color-dark text-wrap">
@@ -69,7 +69,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
     return Array.isArray(dropDownSection) && dropDownSection.length > 0 ? (
       dropDownSection.map((section, index) => (
         <div key={index}>
-          <h4 className="mb-3 text-sm font-semibold text-dark dark:text-white">
+          <h4 className="mb-3 text-sm font-semibold text-gray-600 tracking-wide leading-loose dark:text-white">
             {section.title}
           </h4>
           <div className="space-y-2">
