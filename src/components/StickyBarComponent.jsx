@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function StickyBar({
-  message = "We have launched Brand new Blocks featuring over 300+ UI Elements!",
+  message = "We are welcoming international funders and foundations to support our mission.",
   transitionDuration = 300,
 }) {
   const [isVisible, setIsVisible] = useState(true);
