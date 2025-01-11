@@ -55,7 +55,7 @@ const Footer = ({ data }) => {
 const LogoAndContact = memo(({ data }) => (
   <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
     <div className="mb-10 w-full flex flex-wrap overflow-hidden sm:justify-center md:justify-center lg:justify-start xl:justify-start">
-      <a href="/#" className="mb-6 inline-block max-w-80 mx-auto sm:mx-0">
+      <a href="/" className="mb-6 inline-block max-w-80 mx-auto sm:mx-0">
         <img
           src={ics_logo}
           alt={data?.alt_logo}

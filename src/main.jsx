@@ -8,17 +8,24 @@ import Loader from "./components/LoaderComponent";
 import "react-toastify/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import App from "./App";
-import './i18n.js';
+import "./i18n.js";
+import BlogDetailsComponent from "./components/BlogDetailsComponent.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <Loader/>,
-    children: [{
-      path: "/",
-      element: <App/>,
-    }],
+    errorElement: <Loader />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/blog-details",
+        element: <BlogDetailsComponent />,
+      },
+    ],
   },
 ]);
 

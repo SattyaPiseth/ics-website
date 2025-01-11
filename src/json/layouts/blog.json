@@ -1,27 +1,31 @@
 [
-    {
-      "date": "Oct 28, 2024",
-      "CardTitle": "Provide tailor-made ToT (training of trainers) to meet your need",
-      "CardDescription": "We offer tailor-made Training of Trainers (ToT) programs specifically designed to meet your unique needs in Parenting and Family Budgeting education. With our extensive experience in these areas, we equip trainers with the knowledge and skills necessary to effectively engage and support families. Our customized training sessions include interactive workshops, practical resources, and proven methodologies that enhance learning and retention. By focusing on real-world applications and culturally relevant practices, we ensure that trainers are well-prepared to impart essential skills to parents and caregivers. Together, we aim to foster a supportive environment that empowers families to make informed decisions and build a sustainable future.",
-      "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/10-300x300.png"
+      {
+        "date": "Oct 28, 2024",
+        "CardTitle": "Provide tailor-made ToT (training of trainers) to meet your need",
+        "CardDescription": "We offer tailor-made Training of Trainers (ToT) programs specifically designed to meet your unique needs in Parenting and Family Budgeting education. With our extensive experience in these areas, we equip trainers with the knowledge and skills necessary to effectively engage and support families. Our customized training sessions include interactive workshops, practical resources, and proven methodologies that enhance learning and retention. By focusing on real-world applications and culturally relevant practices, we ensure that trainers are well-prepared to impart essential skills to parents and caregivers. Together, we aim to foster a supportive environment that empowers families to make informed decisions and build a sustainable future.",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/10-300x300.png",
+        "url": "/tot-training-details"
     },
     {
-      "date": "Oct 28, 2024",
-      "CardTitle": "Building Family’s Resilience of parenting without violence",
-      "CardDescription": "We focuses on empowering parents to navigate the daily challenges of child-rearing with compassion and understanding. Our program provides valuable resources and strategies to foster healthy communication, emotional intelligence, and positive discipline techniques. We believe that by equipping parents with the skills they need, we can create nurturing environments that promote the well-being of both children and families. Our approach emphasizes the importance of resilience in parenting, enabling families to thrive even in the face of adversity. Together, we strive to break the cycle of violence and build a brighter future for children and communities.",
-      "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/Update-1080-%C3%97-1080-px-copy.png"
+        "date": "Oct 28, 2024",
+        "CardTitle": "Building Family’s Resilience of parenting without violence",
+        "CardDescription": "We focuses on empowering parents to navigate the daily challenges of child-rearing with compassion and understanding. Our program provides valuable resources and strategies to foster healthy communication, emotional intelligence, and positive discipline techniques. We believe that by equipping parents with the skills they need, we can create nurturing environments that promote the well-being of both children and families. Our approach emphasizes the importance of resilience in parenting, enabling families to thrive even in the face of adversity. Together, we strive to break the cycle of violence and build a brighter future for children and communities.",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/Update-1080-%C3%97-1080-px-copy.png",
+        "url": "/family-resilience-details"
     },
     {
       "date": "Oct 28, 2024",
       "CardTitle": "Family Counseling on Child Nurturing Care and Development",
       "CardDescription": "Our Family Counseling program on Child Nurturing Care and Development is dedicated to supporting parents and caregivers in finding positive and effective solutions for their children's growth and well-being. We provide a safe and welcoming environment where families can discuss their concerns and challenges openly. Through personalized guidance and evidence-based strategies, we empower caregivers to foster healthy emotional, social, and physical development in their children. Our counselors work collaboratively with families to build confidence in their parenting skills, enhancing their ability to create nurturing home environments. By focusing on the unique needs of each family, we aim to promote resilience and positive outcomes for both children and their caregivers.",
-      "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/11-300x300.png"
+      "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/11-300x300.png",
+      "url": "/family-counseling-details"
     },
     {
         "date": "Oct 28, 2024",
         "CardTitle": "Empower Community-based Resources on Positive Parenting",
         "CardDescription": "Our initiative to empower community-based resources on Positive Parenting emphasizes collaboration with the Commune Committee for Women and Children (CCWC) to strengthen family support systems. By working closely with CCWC, we aim to enhance the capacity of community leaders and caregivers to promote nurturing parenting practices. Our programs provide training, resources, and ongoing support to enable families to adopt positive parenting strategies that foster healthy child development and well-being. We believe that by leveraging local knowledge and expertise, we can create sustainable solutions that address the unique challenges faced by families in our communities. Together, we strive to build a network of support that empowers parents and caregivers to create safe, loving, and nurturing environments for their children.",
-        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/9-300x300.png"
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/9-300x300.png",
+        "url": "/community-resources-details"
     }
   ]
   
