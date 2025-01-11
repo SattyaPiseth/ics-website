@@ -5,30 +5,27 @@ import HttpBackend from 'i18next-http-backend';
 const savedLanguage = localStorage.getItem('i18nextLng') || 'kh';
 
 i18n
-  .use(HttpBackend) // use the HttpBackend
-  .use(initReactI18next) // pass the i18n instance to react-i18next module
+  .use(HttpBackend)
+  .use(initReactI18next)
   .init({
       backend: {
-          // Correcting the path to ensure it points to the public directory
-          loadPath: '/locales/{{lng}}/{{ns}}.json', // Assuming public/locales/ structure
+          loadPath: '/locales/{{lng}}/{{ns}}.json',  // Note: no './src' or './public'
       },
       lng: savedLanguage,
       fallbackLng: 'kh',
-      ns: ['translation'], // namespaces
+      ns: ['translation'],
       defaultNS: 'translation',
       interpolation: {
-          escapeValue: false // not needed for React as it escapes by default
+          escapeValue: false
       },
   });
 
 i18n.on('languageChanged', (lng) => {
-    localStorage.setItem('i18nextLng', lng); // save the new language preference
+    localStorage.setItem('i18nextLng', lng);
 });
 
-// Error handling for loading translation files
 i18n.on('failedLoading', (lng, ns, msg) => {
     console.error(`Failed loading: ${ns} for language: ${lng}, Message: ${msg}`);
-    // Optionally, implement additional logic such as notifications to users, retries, or fallbacks.
 });
 
 export default i18n;
