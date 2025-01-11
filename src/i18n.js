@@ -9,7 +9,7 @@ i18n
     .use(initReactI18next) // pass the i18n instance to react-i18next module
     .init({
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json', // path where resources are loaded from
+            loadPath: 'locales/{{lng}}/{{ns}}.json', // path where resources are loaded from
         },
         lng: savedLanguage,
         fallbackLng: 'kh',
