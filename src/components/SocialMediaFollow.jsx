@@ -1,7 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify"; // Ensure you have toast notifications set up
+import useFontClass from "../utils/useFontClass";
 
 const SocialMediaFollow = ({ socialLinks }) => {
+  const { t } = useTranslation();
+  const { fontClass } = useFontClass();
   const handleLinkClick = (link, toastMessage) => {
     if (link.startsWith("http") || link.startsWith("mailto:")) {
       window.open(link, "_blank");
@@ -31,9 +35,9 @@ const SocialMediaFollow = ({ socialLinks }) => {
   };
 
   return (
-    <div className="w-full px-4 sm:w-1/2 lg:w-3/12 mt-10 sm:mt-0">
+    <div className={`w-full px-4 sm:w-1/2 lg:w-3/12 mt-10 sm:mt-0 ${fontClass}`}>
       <div className="mb-10 w-full">
-        <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white text-center sm:text-left flex justify-center overflow-hidden">
+        <h4 className="mb-9 text-lg font-semibold text-gray-700 dark:text-white text-center sm:text-left flex justify-center overflow-hidden">
           {socialLinks?.header}
         </h4>
         <div className="flex items-center justify-center space-x-4 overflow-hidden">

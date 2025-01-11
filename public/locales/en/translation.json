@@ -127,10 +127,13 @@
         "logoDark": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/cropped-Logo-for-web_black.png",
         "phone": "(+855) 12 520 663",
         "logoLink": "/#",
+        "resourcesHeader": "Resources",
+        "companyLinksHeader": "About & Contact",
+        "partnersLinksHeader": "Partners & Support",
         "resources": [
           { "id": 1, "link": "resources", "label": "All Resources" },
           { "id": 2, "link": "resources/positive-parenting-tips", "label": "Positive Parenting Tips" },
-          { "id": 3, "link": "resources/mowa-led-positive-parenting-toolkits", "label": "MoWA-Led Positive Parenting Toolkits" }
+          { "id": 3, "link": "resources/mowa-led-positive-parenting-toolkits", "label": "Ministry of Women's Affairs (MoWA)-Led Positive Parenting Toolkits" }
         ],
         "companyLinks": [
           { "id": 1, "link": "#", "label": "About ICS-SP" },
