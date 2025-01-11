@@ -49,7 +49,7 @@ const SocialMediaFollow = ({ socialLinks }) => {
                   viewBox={svgViewBox}
                   className="h-6 w-6"
                 >
-                  <path d={svgPath} />
+                  <path d={svgPath} className="fill-current transition-colors duration-300 ease-in-out" />
                 </svg>
               </button>
             )

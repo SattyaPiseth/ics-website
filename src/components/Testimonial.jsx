@@ -18,7 +18,10 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section className="pb-20 pt-20 dark:bg-dark lg:pb-[120px] lg:pt-[120px]" data-aos="fade-left">
+    <section
+      className="pb-20 pt-20 dark:bg-dark lg:pb-[120px] lg:pt-[120px]"
+      data-aos="fade-left"
+    >
       <div className="container mx-auto">
         <Swiper
           slidesPerView={1}
@@ -94,7 +97,7 @@ const SingleTestimonial = ({
             <img
               src={image}
               alt="testimonial"
-              className="w-full rounded-lg shadow-md"
+              className="w-full rounded-lg shadow-md object-cover"
             />
             <span className="absolute -left-6 -top-6 z-[-1] hidden sm:block">
               <DotShape />
