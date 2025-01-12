@@ -54,7 +54,7 @@ export function CarouselComponent() {
             <img
               src={slide.image}
               alt={`Image ${index + 1}`}
-              className="h-full w-full object-cover" // Ensures the image covers the carousel
+              className="h-full w-full sm:object-none md:object-cover " // Ensures the image covers the carousel
               style={{ transition: "opacity 0.5s ease" }}
             />
             <div className="absolute inset-0 bg-black/75 flex items-end justify-center p-4">
