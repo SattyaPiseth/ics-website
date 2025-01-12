@@ -30,6 +30,8 @@ module.exports = withMT({
       colors: {
         primary: {
           DEFAULT: "#0070C0", // A blue shade from the logo
+          light: "#0080C0", // Lighter shade of primary
+          dark: "#0050A0", // Darker shade of primary
         },
         secondary: {
           DEFAULT: "#FF0000", // A red shade from the logo

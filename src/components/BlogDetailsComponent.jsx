@@ -174,7 +174,7 @@ const BlogDetailsComponent = () => {
           {/* Scroll to Top Button */}
           {showScrollButton && (
             <button
-              className="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition"
+              className="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-light transition"
               onClick={scrollToTop}
               aria-label="Scroll to top"
             >
