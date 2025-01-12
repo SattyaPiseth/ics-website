@@ -4,6 +4,7 @@ import ics_logo from "./../assets/ics_logo.png";
 import TranslateButton from "./TranslateButton";
 import { useTranslation } from "react-i18next";
 import useFontClass from "../utils/useFontClass";
+import { NavLink } from "react-router-dom";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ export default function NavbarComponent() {
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-96 min-w-60 max-w-full px-4">
-              <a href="/" className="block w-full py-5" aria-label="Logo">
+              {/* <a href="#" className="block w-full py-5" aria-label="Logo">
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo"
@@ -26,7 +27,20 @@ export default function NavbarComponent() {
                   alt="ICS Skillful Parenting Logo (Dark Mode)"
                   className="hidden dark:block w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
                 />
-              </a>
+              </a> */}
+
+              <NavLink to="/" className="block w-full py-5" aria-label="Logo">
+                <img
+                  src={ics_logo}
+                  alt="ICS Skillful Parenting Logo"
+                  className="dark:hidden w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                />
+                <img
+                  src={ics_logo}
+                  alt="ICS Skillful Parenting Logo (Dark Mode)"
+                  className="hidden dark:block w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                />
+              </NavLink>
             </div>
             <div
               className={`flex w-full items-center justify-end px-4 ${fontClass}`}

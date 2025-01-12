@@ -3,13 +3,16 @@ import { useTranslation } from "react-i18next";
 import SocialMediaFollow from "./SocialMediaFollow";
 import ics_logo from "./../assets/ics_logo.png";
 import useFontClass from "../utils/useFontClass";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation();
   const { fontClass } = useFontClass();
 
   const LinkGroup = memo(({ children, header }) => (
-    <div className={`w-full px-4 sm:w-1/2 lg:w-2/12 mt-10 sm:mt-0 ${fontClass}`}>
+    <div
+      className={`w-full px-4 sm:w-1/2 lg:w-2/12 mt-10 sm:mt-0 ${fontClass}`}
+    >
       <div className="mb-10 w-full">
         <h4 className="mb-9 text-base sm:text-base font-semibold text-gray-700 dark:text-white text-center sm:text-left flex justify-center sm:justify-center md:justify-center lg:justify-start overflow-hidden">
           {header}
@@ -32,7 +35,9 @@ const Footer = () => {
   ));
 
   return (
-    <footer className={`relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] font-poppins`}>
+    <footer
+      className={`relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] font-poppins`}
+    >
       <section className="container mx-auto">
         <div className="-mx-4 flex flex-wrap justify-center">
           {/* Logo and Contact Details */}
@@ -93,7 +98,7 @@ const LogoAndContact = memo(() => {
   return (
     <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
       <div className="mb-10 w-full flex flex-wrap overflow-hidden sm:justify-center md:justify-center lg:justify-start xl:justify-start">
-        <a href="/" className="mb-6 inline-block max-w-80 mx-auto sm:mx-0">
+        {/* <a href="#" className="mb-6 inline-block max-w-80 mx-auto sm:mx-0">
           <img
             src={ics_logo}
             alt={t("footer.altLogo")}
@@ -104,7 +109,19 @@ const LogoAndContact = memo(() => {
             alt={t("footer.altLogo")}
             className="max-w-full hidden dark:block h-auto"
           />
-        </a>
+        </a> */}
+        <NavLink to="/" className="mb-6 inline-block max-w-80 mx-auto sm:mx-0">
+          <img
+            src={ics_logo}
+            alt={t("footer.altLogo")}
+            className="max-w-full dark:hidden h-auto"
+          />
+          <img
+            src={t("footer.logoDark")}
+            alt={t("footer.altLogo")}
+            className="max-w-full hidden dark:block h-auto"
+          />
+        </NavLink>
         <p className="mb-7 text-base text-body-color dark:text-dark-6 text-center sm:text-left md:text-center lg:text-left">
           {t("footer.organizationName")}
         </p>
