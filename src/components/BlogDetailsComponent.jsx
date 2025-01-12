@@ -55,7 +55,7 @@ const BlogDetailsComponent = () => {
           </header>
 
           {/* Featured Image */}
-          <div className="relative mb-12 overflow-hidden rounded-lg shadow-lg">
+          <div className="relative mb-12 overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
             <img
               src="./blog-details_03.JPG"
               alt="Artificial Intelligence in Business"
