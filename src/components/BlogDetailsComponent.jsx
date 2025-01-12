@@ -37,7 +37,7 @@ const BlogDetailsComponent = () => {
     <>
       {/* Progress Bar */}
       <div
-        className="fixed top-0 left-0 h-1 bg-indigo-600 z-50"
+        className="fixed top-0 left-0 h-1 bg-primary-light z-50"
         style={{ width: `${scrollProgress}%` }}
       ></div>
 
