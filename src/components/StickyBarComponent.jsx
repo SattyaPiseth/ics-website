@@ -49,7 +49,7 @@ export default function StickyBar({
          {/* Announcement text with line clamp */}
         <NavLink
           to={"https://ee.kobotoolbox.org/single/o1e0n2Zm"}
-          className={`text-xs sm:text-sm font-medium text-dark dark:text-white overflow-hidden whitespace-nowrap text-ellipsis group-hover:text-primary ${fontClass}`}
+          className={`text-xs sm:text-sm font-medium text-dark dark:text-white overflow-hidden whitespace-nowrap text-ellipsis group-hover:text-primary group-hover:underline ${fontClass}`}
         >
           {message}
         </NavLink>
