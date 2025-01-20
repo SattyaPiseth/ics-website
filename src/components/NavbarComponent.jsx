@@ -51,11 +51,11 @@ export default function NavbarComponent() {
                   aria-expanded={open}
                   aria-controls="navbarCollapse"
                   id="navbarToggler"
-                  className={`absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden transition-all duration-300`}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 rounded-lg px-3 py-1.5 ring-primary focus:ring-2 lg:hidden transition-all duration-300"
                   aria-label="Toggle navigation"
                 >
                   {open ? (
-                    <span className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 text-dark-6 duration-200 hover:text-dark dark:hover:text-white">
+                    <span className="flex items-center justify-center w-6 h-6 text-dark-6 duration-200 hover:text-dark dark:hover:text-white">
                       <svg
                         width="10"
                         height="10"
@@ -84,9 +84,9 @@ export default function NavbarComponent() {
                       stroke="currentColor"
                       fill="currentColor"
                       viewBox="0 0 512 512"
-                      className="w-5 h-5 xs:w-6 xs:h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-300"
+                      className="w-6 h-6 transition-transform duration-300"
                       xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true" // Hide this icon from assistive technologies
+                      aria-hidden="true"
                     >
                       <path
                         fill="none"
@@ -99,18 +99,17 @@ export default function NavbarComponent() {
                   )}
                 </button>
                 <nav
-                  className={`absolute right-0 px-6 shadow lg:block lg:w-full header-navbar z-50 w-full max-w-full rounded bg-white py-3 shadow-features duration-300 dark:bg-dark-2 xs:max-w-full lg:static lg:mt-0 lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent visible top-full opacity-100 lg:visible lg:opacity-100 ${
+                  className={`absolute right-0 px-6 shadow lg:block header-navbar z-50 w-full max-w-full rounded bg-white py-3 shadow-features duration-300 dark:bg-dark-2 lg:static lg:mt-0 lg:bg-transparent lg:py-0 lg:shadow-none lg:dark:bg-transparent ${
                     !open && "hidden"
                   }`}
                   id="navbarCollapse"
                 >
-                  <ul className="block lg:flex whitespace-nowrap border sm:border-transparent rounded-lg">
+                  <ul className="block lg:flex">
                     <li className="group relative hidden xl:block">
                       <a
                         href="about-us"
-                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
+                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 rounded-lg"
                       >
-                        {/* {navbarData?.about?.title} */}
                         {`${t("about.title")}`}
                       </a>
                     </li>
@@ -143,9 +142,8 @@ export default function NavbarComponent() {
                     <li className="group relative hidden xl:block">
                       <a
                         href="contact-us"
-                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
+                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 rounded-lg"
                       >
-                        {/* {navbarData?.contact?.title} */}
                         {`${t("contact.title")}`}
                       </a>
                     </li>
@@ -153,7 +151,7 @@ export default function NavbarComponent() {
                 </nav>
               </div>
 
-              <div className="group relative right-14 lg:right-0 xxxs:hidden xxs:block">
+              <div className="group relative right-14 lg:right-0 xxs:block">
                 <TranslateButton />
               </div>
             </div>
