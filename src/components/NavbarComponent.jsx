@@ -153,7 +153,7 @@ export default function NavbarComponent() {
                 </nav>
               </div>
 
-              <div className="group relative right-14 lg:right-0 xxxs:hidden xxs:block">
+              <div className="group relative right-14 lg:right-0 xxxs:hidden xxs:hidden xs:block">
                 <TranslateButton />
               </div>
             </div>
