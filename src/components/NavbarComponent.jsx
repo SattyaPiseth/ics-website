@@ -11,11 +11,11 @@ export default function NavbarComponent() {
   const { fontClass } = useFontClass();
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50" role="banner">
       <div className="bg-white dark:bg-dark font-poppins">
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-96 min-w-60 max-w-full px-4">
+            <div className="w-96 px-4">
               {/* <a href="#" className="block w-full py-5" aria-label="Logo">
                 <img
                   src={ics_logo}
@@ -33,12 +33,12 @@ export default function NavbarComponent() {
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo"
-                  className="dark:hidden w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                  className="w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300 dark:hidden"
                 />
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo (Dark Mode)"
-                  className="hidden dark:block w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
+                  className="hidden dark:block w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300"
                 />
               </NavLink>
             </div>
@@ -153,7 +153,7 @@ export default function NavbarComponent() {
                 </nav>
               </div>
 
-              <div className="group relative xs:relative right-14 sm:right-14 md:right-14 lg:right-0 xl:right-0 xl:block">
+              <div className="group relative right-14 lg:right-0 xxxs:hidden xxs:block">
                 <TranslateButton />
               </div>
             </div>
