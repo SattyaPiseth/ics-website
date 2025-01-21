@@ -6,8 +6,8 @@ module.exports = withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
   theme: {
     screens: {
-      xxxs: '320px', // Define xxs for screens starting from 320px
-      xxs: '375px',   // Adjusted from earlier example if you need another step between xxxs and xs
+      // xxxs: '320px', // Define xxs for screens starting from 320px
+      // xxs: '375px',   // Adjusted from earlier example if you need another step between xxxs and xs
       xs: "512px",
       sm: "640px",
       // => @media (min-width: 640px) { ... }
