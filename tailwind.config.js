@@ -7,7 +7,7 @@ module.exports = withMT({
   theme: {
     screens: {
       xxxs: '320px', // Define xxs for screens starting from 320px
-      xxs: '375px',   // Adjusted from earlier example if you need another step between xxxs and xs
+      xxs: '360px',   // Adjusted from earlier example if you need another step between xxxs and xs
       xs: "512px",
       sm: "640px",
       // => @media (min-width: 640px) { ... }
