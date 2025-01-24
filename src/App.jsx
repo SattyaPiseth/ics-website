@@ -1,9 +1,9 @@
 import BlogComponent from "./components/BlogComponent";
 import { CarouselComponent } from "./components/CarouselComponent";
 import HeroSection from "./components/HeroSection";
-import Testimonial from "./components/Testimonial";
-import VideoComponent from "./components/VideoComponent";
-import videoData from './json/layouts/video.json';
+// import Testimonial from "./components/Testimonial";
+// import VideoComponent from "./components/VideoComponent";
+// import videoData from './json/layouts/video.json';
 
 function App() {
   return (
