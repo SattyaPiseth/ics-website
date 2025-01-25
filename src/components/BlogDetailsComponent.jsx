@@ -15,9 +15,10 @@ const BlogDetailsComponent = () => {
       setScrollProgress(progress);
 
       // Toggle the visibility of the scroll-to-top button when it's near the bottom of the page
+      const headerHeight = document.querySelector("header")?.offsetHeight || 0; // New: Get header height
       const footerOffset = document.querySelector("footer")?.offsetTop || 0;
       const windowHeight = window.innerHeight;
-      if (scrollY + windowHeight >= footerOffset) {
+      if (scrollY <= headerHeight || scrollY + windowHeight >= footerOffset) {
         setShowScrollButton(false); // Hide button near the footer
       } else {
         setShowScrollButton(true); // Show button when not near the footer
