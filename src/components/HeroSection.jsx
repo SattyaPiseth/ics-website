@@ -14,7 +14,7 @@ const HeroSection = () => {
                 {heroData.title}
               </h1>
               <p
-                className="mb-8 max-w-[480px] text-base lg:text-lg text-dark dark:text-gray-400"
+                className="mb-8 w-full text-base lg:text-lg text-dark dark:text-gray-400"
                 data-aos="fade-up"
               >
                 {heroData.description}
