@@ -140,8 +140,8 @@ export default function NavbarComponent() {
                     </li>
                     <li className="group relative xl:block">
                       <a
-                        href="about-us"
-                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
+                        href="get_involved"
+                        className="flex py-2 justify-center text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                       
                         {`${t("getInvolved.title")}`}
