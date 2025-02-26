@@ -23,40 +23,34 @@
     "expertiseSection" : [
       {
         
-          "title": "Expertise",
+          "title": "Current Projects",
           "items": [
             {
               "href": "#",
-              "title": "Skillful Parenting Program",
-              "description": "A comprehensive program designed to empower parents and caregivers with positive parenting practices to enhance child development and family well-being.",
+              "title": "Exploring Our Active Initiatives",
+              "description": "Dive into our ongoing projects complete with descriptions and details about our funding partners. This section showcases the active efforts and collaborations that drive our current impact.",
               "Icon": "TbCopyCheckFilled"
-            },
-            {
-              "href": "#",
-              "title": "Family Budgeting",
-              "description": "A module focused on money management, helping families reduce financial stress and improve their financial decision-making.",
-              "Icon": "GrMoney"
             }
           ]
         },
         {
-          "title": "Projects",
+          "title": "Past Projects & Achievements",
           "items": [
             {
               "href": "#",
-              "title": "Tailored Training Services",
-              "description": "Customized training sessions for individuals and organizations to meet specific needs in parenting and family support.",
+              "title": "Celebrating Our Successes",
+              "description": "Review our completed projects and the achievements they've brought. This area highlights the sustainable impact we've had and the lessons learned along the way.",
               "Icon": "FaChartLine"
             }
           ]
         },
         {
-          "title": "Resources",
+          "title": "Reports & Publications",
           "items": [
             {
               "href": "#",
-              "title": "Skillful Parenting Guide",
-              "description": "Explore our guide that covers essential modules on parenting, family communication, positive discipline, and child protection.",
+              "title": "Insights and Learnings",
+              "description": "Access a wealth of knowledge through our detailed reports and publications. This repository includes comprehensive documentation of our work and its outcomes, providing transparency and insights into our methods and results.",
               "Icon": "FaFolderOpen"
             }
           ]
@@ -66,24 +60,24 @@
     
       "partnersSection": [
         {
-          "title": "Partners & Donors",
+          "title": "Our Programs",
           "items": [
             {
               "href": "#",
-              "title": "Collaborative Partnerships",
-              "description": "Discover how we work with organizations to end violence in families.",
+              "title": "Empowering Communities Through Diverse Initiatives",
+              "description": "Dive into our diverse initiatives, which include Supportive Parenting, Financial Literacy and Economic Empowerment, Youth Empowerment, Ending Violence Against Women and Girls (VAWG), and Research and Advocacy efforts to drive societal change.",
               "Icon": "FaHandshakeSimple"
             }
           ]
         },
         {
-          "title": "Donate",
+          "title": "Training Services",
           "items": [
             {
               "href": "#",
-              "title": "Support Skilful Parenting",
-              "description": "Help us improve family lives and protect children and women from violence.",
-              "Icon": "FaDonate"
+              "title": "Explore Our Training Opportunities",
+              "description": "Enhance your skills through our specialized training offerings, such as Parenting & Caregiver Training, Financial Literacy Training, Youth Entrepreneurship Training, and custom training solutions for NGOs, schools, and businesses. You can also request tailored training programs to meet specific needs.",
+              "Icon": "GrWorkshop"
             }
           ]
         }
@@ -133,6 +127,23 @@
               "title": "Get in Touch with Us",
               "description": "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
               "Icon": "BiSolidMessageDetail"
+            }
+          ]
+        },
+        {
+          "title": "Get Involved",
+          "items": [
+            {
+              "href": "#",
+              "title": "Volunteer & Internship Opportunities",
+              "description": "Explore ways to engage with us through volunteer and internship opportunities.",
+              "Icon": "FaBriefcase"
+            },
+            {
+              "href": "#",
+              "title": "Support Our Work",
+              "description": "Support our initiatives by contributing through donations and participating in fundraising efforts.",
+              "Icon": "GiReceiveMoney"
             }
           ]
         }

@@ -5,12 +5,15 @@ import {
   FaHandshakeSimple,
   FaListCheck,
   FaRoadCircleCheck,
+  FaBriefcase
 } from "react-icons/fa6";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { TbCopyCheckFilled } from "react-icons/tb";
 import { GrMoney } from "react-icons/gr";
 import { LuHistory } from "react-icons/lu";
 import { MdGroups } from "react-icons/md";
+import { GiReceiveMoney } from "react-icons/gi";
+import { GrWorkshop } from "react-icons/gr";
 
 const iconMap = {
   TbCopyCheckFilled: TbCopyCheckFilled,
@@ -24,7 +27,10 @@ const iconMap = {
   FaRoadCircleCheck: FaRoadCircleCheck,
   BiSolidMessageDetail: BiSolidMessageDetail,
   LuHistory: LuHistory,
-  MdGroups: MdGroups
+  MdGroups: MdGroups,
+  FaBriefcase: FaBriefcase,
+  GiReceiveMoney: GiReceiveMoney,
+  GrWorkshop: GrWorkshop
 };
 
 const DropdownItem = ({ href, title, description, IconName }) => {
