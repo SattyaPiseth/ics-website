@@ -4,14 +4,17 @@
     },
     "label" : {
       "about&contact" : "about & contact",
-      "partners&support" : "Partners & Support",
-      "expertise&resources" : "Expertise & Resources"
+      "partners&support" : "Program & Traning",
+      "expertise&resources" : "Impact & Stories"
     },
     "about": {
       "title": "About Us"
     },
     "contact": {
       "title": "Contact Us"
+    },
+    "getInvolved": {
+      "title": "Get Involved"
     },
     "language" : {
       "english" : "English",

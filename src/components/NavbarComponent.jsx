@@ -16,18 +16,6 @@ export default function NavbarComponent() {
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-96 px-4">
-              {/* <a href="#" className="block w-full py-5" aria-label="Logo">
-                <img
-                  src={ics_logo}
-                  alt="ICS Skillful Parenting Logo"
-                  className="dark:hidden w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
-                />
-                <img
-                  src={ics_logo}
-                  alt="ICS Skillful Parenting Logo (Dark Mode)"
-                  className="hidden dark:block w-44 xs:w-52 sm:w-52 md:w-60 lg:w-60 xl:w-80 sm:min-w-52 md:min-w-60 xl:min-w-80 2xl:max-w-80 transition-all duration-300"
-                />
-              </a> */}
 
               <NavLink to="/" className="block w-full py-5" aria-label="Logo">
                 <img
@@ -139,14 +127,24 @@ export default function NavbarComponent() {
                         })}
                       />
                     </ul>
+                    
+                    
 
                     <li className="group relative hidden xl:block">
                       <a
                         href="contact-us"
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                        {/* {navbarData?.contact?.title} */}
                         {`${t("contact.title")}`}
+                      </a>
+                    </li>
+                    <li className="group relative xl:block">
+                      <a
+                        href="about-us"
+                        className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
+                      >
+                      
+                        {`${t("getInvolved.title")}`}
                       </a>
                     </li>
                   </ul>

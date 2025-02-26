@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import App from "./App";
 import "./i18n.js";
 import BlogDetailsComponent from "./components/BlogDetailsComponent.jsx";
+import blogData  from "./json/layouts/blog_details.json";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog-details",
-        element: <BlogDetailsComponent />,
+        element: <BlogDetailsComponent blogData={blogData} />,
       },
     ],
   },
