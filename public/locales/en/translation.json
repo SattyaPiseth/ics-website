@@ -87,32 +87,32 @@
           "title": "About us",
           "items": [
             {
-              "href": "#",
+              "href": "/about-us",
               "title": "Mission",
               "description": "State your organization's mission clearly, possibly with a short video. We aim to ensure every child, parent, and young person thrives by empowering families with parenting skills, enhancing communities through financial literacy, and providing youth with opportunities in entrepreneurship and job placement. By creating safe, nurturing environments and equipping individuals with essential skills, we seek to break cycles of poverty and violence, enabling Cambodian families and youth to lead resilient, self-sufficient lives.",
               "Icon": "FaListCheck"
             },
             {
-              "href": "#",
+              "href": "/about-us",
               "title": "Our History",
               "description": "................",
               "Icon": "LuHistory"
             },
             {
-              "href": "#",
+              "href": "/about-us",
               "title": "Who We Are",
               "description": "Improving Cambodia’s Society through Skilful Parenting (ICS-SP) is a national non-profit organization established in July 2015. We aim to enhance family lives to positively impact the well-being of children and women. Our collaborative approach enables us to work effectively with partners and participants in our mission.",
               "Icon": "FaBuildingNgo"
             },
             
             {
-              "href": "#",
+              "href": "/about-us",
               "title": "Teams",
               "description": "Introduce your team with photos and short bio and role.",
               "Icon": "MdGroups"
             },
             {
-              "href": "#",
+              "href": "/about-us",
               "title": "Partners & Supporters",
               "description": ".......................",
               "Icon": "FaRoadCircleCheck"
@@ -123,7 +123,7 @@
           "title": "Contact us",
           "items": [
             {
-              "href": "#",
+              "href": "/contact-us",
               "title": "Get in Touch with Us",
               "description": "Reach out to ICS-SP to collaborate or learn more about our initiatives to improve family lives and prevent violence through skillful parenting.",
               "Icon": "BiSolidMessageDetail"
