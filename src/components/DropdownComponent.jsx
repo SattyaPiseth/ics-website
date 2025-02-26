@@ -9,6 +9,8 @@ import {
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { TbCopyCheckFilled } from "react-icons/tb";
 import { GrMoney } from "react-icons/gr";
+import { LuHistory } from "react-icons/lu";
+import { MdGroups } from "react-icons/md";
 
 const iconMap = {
   TbCopyCheckFilled: TbCopyCheckFilled,
@@ -21,6 +23,8 @@ const iconMap = {
   FaListCheck: FaListCheck,
   FaRoadCircleCheck: FaRoadCircleCheck,
   BiSolidMessageDetail: BiSolidMessageDetail,
+  LuHistory: LuHistory,
+  MdGroups: MdGroups
 };
 
 const DropdownItem = ({ href, title, description, IconName }) => {
