@@ -94,13 +94,14 @@ export default function NavbarComponent() {
                 >
                   <ul className="block lg:flex whitespace-nowrap border sm:border-transparent rounded-lg">
                     <li className="group relative hidden xl:block">
-                      <a
-                        href="about-us"
+                      <NavLink
+                      to={"about-us"}
+                     
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {/* {navbarData?.about?.title} */}
                         {`${t("about.title")}`}
-                      </a>
+                      </NavLink>
                     </li>
 
                     <ul className="lg:block xl:hidden">
@@ -131,21 +132,21 @@ export default function NavbarComponent() {
                     
 
                     <li className="group relative hidden xl:block">
-                      <a
-                        href="contact-us"
+                      <NavLink
+                      to={"contact-us"}
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {`${t("contact.title")}`}
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="group relative hidden xl:block">
-                      <a
-                        href="get_involved"
+                      <NavLink to={"get_involved"}
+                       
                         className="flex py-2 justify-center text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                       
                         {`${t("getInvolved.title")}`}
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </nav>

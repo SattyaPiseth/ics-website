@@ -11,6 +11,9 @@ import App from "./App";
 import "./i18n.js";
 import BlogDetailsComponent from "./components/BlogDetailsComponent.jsx";
 import blogData  from "./json/layouts/blog_details.json";
+import AboutComponent from "./components/AboutComponent.jsx";
+import ContactUsComponent from "./components/ContactUsComponent.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
         path: "/blog-details",
         element: <BlogDetailsComponent blogData={blogData} />,
       },
+      {
+        path: "/about-us",
+        element: <AboutComponent/>
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUsComponent/>
+      }
     ],
   },
 ]);
