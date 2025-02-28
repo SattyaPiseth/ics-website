@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DropdownComponent from "./DropdownComponent";
 import ics_logo from "./../assets/ics_logo.png";
 import TranslateButton from "./TranslateButton";
 import { useTranslation } from "react-i18next";
 import useFontClass from "../utils/useFontClass";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 export default function NavbarComponent() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   const { fontClass } = useFontClass();
+  const location = useLocation();
+
+  useEffect(()=>{
+    setOpen(false);
+  },[location])
 
   return (
     <header className="sticky top-0 z-50" role="banner">
