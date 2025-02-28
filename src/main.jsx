@@ -11,8 +11,9 @@ import App from "./App";
 import "./i18n.js";
 import BlogDetailsComponent from "./components/BlogDetailsComponent.jsx";
 import blogData  from "./json/layouts/blog_details.json";
-import AboutComponent from "./components/AboutComponent.jsx";
+import AboutComponent from "./components/about-us/AboutComponent.jsx";
 import ContactUsComponent from "./components/ContactUsComponent.jsx";
+import OurProgram from "./components/our-programs/OurProgram.jsx";
 
 
 const router = createBrowserRouter([
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/our-programs",
-        element: <h1>Our Programs Page</h1>
+        element: <OurProgram/>
       },
       {
         path: "/training-services",
