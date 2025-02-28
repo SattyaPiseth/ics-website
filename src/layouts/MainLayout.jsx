@@ -7,7 +7,11 @@ import footerData from "./../json/layouts/footer.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 export default function MainLayout() {
+
+  useScrollToTop();
+
   const location = useLocation();
   useEffect(() => {
     AOS.init({
@@ -15,9 +19,11 @@ export default function MainLayout() {
       once: true,
     });
   }, []);
+
   useEffect(() => {
     AOS.refresh();
   }, [location]);
+
   return (
     <>
       <StickyBar />
@@ -30,4 +36,11 @@ export default function MainLayout() {
       <Footer data={footerData} />
     </>
   );
+}
+
+export const useScrollToTop = () => {
+  const location = useLocation();
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[location])
 }
