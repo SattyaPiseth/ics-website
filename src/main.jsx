@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         element: <ContactUsComponent/>
       },
       {
-        path: "/get-involved",
+        path: "/get_involved",
         element: <Breadcrumb/>
       },
       {
