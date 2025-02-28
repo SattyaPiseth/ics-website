@@ -14,6 +14,9 @@ import blogData  from "./json/layouts/blog_details.json";
 import AboutComponent from "./components/about-us/AboutComponent.jsx";
 import ContactUsComponent from "./components/ContactUsComponent.jsx";
 import OurProgram from "./components/our-programs/OurProgram.jsx";
+import TrainingProgram from "./components/training-program/TrainingProgram.jsx";
+import ImpactStories from "./components/impact-stories/ImpactStories.jsx";
+import Breadcrumb from "./components/about-us/Breadcrumbs.jsx";
 
 
 const router = createBrowserRouter([
@@ -40,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/get_involved",
-        element: <h1>Get Involved Page</h1>
+        element: <Breadcrumb/>
       },
       {
         path: "/our-programs",
@@ -48,11 +51,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/training-services",
-        element: <h1>Training Services Page</h1>
+        element: <TrainingProgram/>
       },
       {
         path: "/impact-stories",
-        element: <h1>Impact Stories Page</h1>
+        element: <ImpactStories/>
       }
     ],
   },

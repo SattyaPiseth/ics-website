@@ -6,7 +6,6 @@ import Footer from "../components/FooterComponent";
 import footerData from "./../json/layouts/footer.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Breadcrumb from "../components/about-us/Breadcrumbs";
 
 
 export default function MainLayout() {

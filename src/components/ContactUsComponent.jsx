@@ -1,9 +1,11 @@
 import React from "react";
+import Breadcrumb from "./about-us/Breadcrumbs";
 
 
 const ContactUsComponent = () => {
   return (
     <>
+    <Breadcrumb/>
     <section class="py-10 dark:bg-dark "data-aos="fade-up">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
