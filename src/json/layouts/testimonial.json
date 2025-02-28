@@ -1,7 +1,7 @@
 [
     {
       "image": "/testimonial.png",
-      "reviewImg": "/ics.png",
+      "reviewImg": "./ics_image.png",
       "reviewAlt": "lineicon",
       "details": "I think spending more time with my children and comforting them when they feel upset about things is the right thing to do.",
       "name": "A Mother",
@@ -9,7 +9,7 @@
     },
     {
         "image": "/testimonial.png",
-        "reviewImg": "/ics.png",
+        "reviewImg": "./ics_image.png",
         "reviewAlt": "lineicon",
         "details": "I give my child courage and tell them that they are doing great. Whenever kids hear this, they put more effort into their work later.",
         "name": "A Father",
@@ -17,7 +17,7 @@
     },
     {
         "image": "/testimonial.png",
-        "reviewImg": "/ics.png",
+        "reviewImg": "./ics_image.png",
         "reviewAlt": "lineicon",
         "details": "Because all my family members live in the same house, we do things together, talking, eating, guiding and solving problems. My family helps and teaches each other, and we have fun. My parents help me out with my homework, and I love it when they bought me clothes",
         "name": "A child aged 14-18",
@@ -25,7 +25,7 @@
     },
     {
         "image": "/testimonial.png",
-        "reviewImg": "/ics.png",
+        "reviewImg": "./ics_image.png",
         "reviewAlt": "lineicon",
         "details": "ICS-SP training program had had an impact in my community, particularly in terms of reducing the use of violence in families and in the community. I would like to scale up the training as much as I can to other parents and caregivers in my community.",
         "name": "A community member",
