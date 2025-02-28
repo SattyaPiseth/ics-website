@@ -5,7 +5,7 @@ import {
   FaHandshakeSimple,
   FaListCheck,
   FaRoadCircleCheck,
-  FaBriefcase
+  FaBriefcase,
 } from "react-icons/fa6";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { TbCopyCheckFilled } from "react-icons/tb";
@@ -14,6 +14,7 @@ import { LuHistory } from "react-icons/lu";
 import { MdGroups } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
 import { GrWorkshop } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 
 const iconMap = {
   TbCopyCheckFilled: TbCopyCheckFilled,
@@ -30,14 +31,14 @@ const iconMap = {
   MdGroups: MdGroups,
   FaBriefcase: FaBriefcase,
   GiReceiveMoney: GiReceiveMoney,
-  GrWorkshop: GrWorkshop
+  GrWorkshop: GrWorkshop,
 };
 
 const DropdownItem = ({ href, title, description, IconName }) => {
   const Icon = iconMap[IconName] || FaChartLine; // Default to FaChartLine if icon is not found
   return (
-    <a
-      href={href}
+    <NavLink
+      to={href}
       className="group flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-1 lg:flex-row dark:hover:bg-white/5"
       role="menuitem"
       tabIndex={0}
@@ -53,7 +54,7 @@ const DropdownItem = ({ href, title, description, IconName }) => {
           {description}
         </p>
       </div>
-    </a>
+    </NavLink>
   );
 };
 
@@ -121,7 +122,11 @@ const DropdownComponent = ({ label, dropDownSection }) => {
       >
         {label}
         <span
-          className={`transform transition-transform duration-200 ${showMegaMenu ? "-scale-y-100" : "lg:group-hover:-scale-y-100 scale-100 lg:scale-110"}`}
+          className={`transform transition-transform duration-200 ${
+            showMegaMenu
+              ? "-scale-y-100"
+              : "lg:group-hover:-scale-y-100 scale-100 lg:scale-110"
+          }`}
         >
           <svg
             width="20"
@@ -140,7 +145,9 @@ const DropdownComponent = ({ label, dropDownSection }) => {
       </button>
       <div
         id="dropdown-menu"
-        className={`w-full bg-white lg:left-0 lg:top-full lg:p-5 dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 lg:absolute lg:hidden lg:max-h-[450px] lg:w-96 lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)] ${showMegaMenu ? "block" : "hidden"}`}
+        className={`w-full bg-white lg:left-0 lg:top-full lg:p-5 dark:bg-dark dropdown-menu left-0 top-full rounded-md border border-transparent p-4 lg:absolute lg:hidden lg:max-h-[450px] lg:w-96 lg:overflow-y-auto lg:rounded-xl lg:bg-white lg:shadow-[0px_10px_40px_rgba(0,0,0,0.05)] lg:duration-300 lg:group-hover:block dark:lg:border-[#272741] dark:lg:bg-dark-2 dark:lg:shadow-[0px_10px_50px_rgba(0,0,0,0.15)] ${
+          showMegaMenu ? "block" : "hidden"
+        }`}
         role="menu"
         aria-labelledby="dropdown-button"
       >
@@ -151,6 +158,5 @@ const DropdownComponent = ({ label, dropDownSection }) => {
     </li>
   );
 };
-
 
 export default DropdownComponent;

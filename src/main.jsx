@@ -36,6 +36,22 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUsComponent/>
+      },
+      {
+        path: "/get_involved",
+        element: <h1>Get Involved Page</h1>
+      },
+      {
+        path: "/our-programs",
+        element: <h1>Our Programs Page</h1>
+      },
+      {
+        path: "/training-services",
+        element: <h1>Training Services Page</h1>
+      },
+      {
+        path: "/impact-stories",
+        element: <h1>Impact Stories Page</h1>
       }
     ],
   },
