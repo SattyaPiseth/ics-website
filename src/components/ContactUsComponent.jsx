@@ -4,7 +4,7 @@ import React from "react";
 const ContactUsComponent = () => {
   return (
     <>
-    <section class="py-10 dark:bg-dark">
+    <section class="py-10 dark:bg-dark "data-aos="fade-up">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 lg:w-8/12">
