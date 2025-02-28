@@ -34,7 +34,7 @@ const iconMap = {
   GrWorkshop: GrWorkshop,
 };
 
-const DropdownItem = ({ href, title, description, IconName }) => {
+const DropdownItem = ({ href, title, description, IconName, closeMenu }) => {
   const Icon = iconMap[IconName] || FaChartLine; // Default to FaChartLine if icon is not found
   return (
     <NavLink
@@ -42,6 +42,7 @@ const DropdownItem = ({ href, title, description, IconName }) => {
       className="group flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-1 lg:flex-row dark:hover:bg-white/5"
       role="menuitem"
       tabIndex={0}
+      onClick={closeMenu}
     >
       <div className="text-primary">
         <Icon size={24} aria-hidden="true" />
@@ -91,6 +92,7 @@ const DropdownComponent = ({ label, dropDownSection }) => {
                 title={item.title}
                 description={item.description}
                 IconName={item.Icon}
+                closeMenu={() => setShowMegaMenu(false)}
               />
             ))}
           </div>
