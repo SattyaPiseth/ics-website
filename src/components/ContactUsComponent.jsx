@@ -75,7 +75,7 @@ const ContactUsComponent = () => {
     </section>
     <section className="overflow-hidden dark:bg-dark">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center"  data-aos="fade-up">
           <div className="w-full px-4">
             <div className="-mx-4 mb-16 flex flex-wrap bg-primary px-5 py-14 sm:p-14">
               <div className="w-full px-4 md:w-1/2 lg:w-1/3">
@@ -176,7 +176,7 @@ const ContactUsComponent = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap justify-between">
+        <div className="-mx-4 flex flex-wrap justify-between" data-aos="flip-up">
           <div className="w-full px-4 lg:w-7/12 xl:w-6/12">
             <div className="mb-12 lg:mb-0 lg:mr-4">
               <form>
@@ -252,7 +252,7 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className="w-full px-4 lg:w-5/12 xl:w-6/12">
+          <div className="w-full px-4 lg:w-5/12 xl:w-6/12" data-aos="flip-up">
             <div className="map-container">
               {/* <object style="border: 0; height: 450px; width: 100%" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object> */}
               <iframe
