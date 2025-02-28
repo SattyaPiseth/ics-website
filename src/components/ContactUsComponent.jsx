@@ -176,7 +176,7 @@ const ContactUsComponent = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap justify-start">
+        <div className="-mx-4 flex flex-wrap justify-between">
           <div className="w-full px-4 lg:w-7/12 xl:w-6/12">
             <div className="mb-12 lg:mb-0 lg:mr-4">
               <form>
@@ -252,12 +252,12 @@ const ContactUsComponent = () => {
             </div>
           </div>
 
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+          <div className="w-full px-4 lg:w-5/12 xl:w-6/12">
             <div className="map-container">
               {/* <object style="border: 0; height: 450px; width: 100%" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object> */}
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3908.672978037479!2d104.8552564!3d11.5752849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095100173dbb67%3A0xd3a722413b108be3!2sImproving%20Cambodia%E2%80%99s%20Society%20through%20Skilful%20Parenting%20(ICS-SP)!5e0!3m2!1sen!2skh!4v1740560143147!5m2!1sen!2skh"
-                width="735"
+                width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
