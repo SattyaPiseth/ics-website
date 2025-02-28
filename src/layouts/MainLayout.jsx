@@ -31,7 +31,7 @@ export default function MainLayout() {
       <Navbar />
       <main className="bg-white overflow-hidden">
         <section>
-          <Breadcrumb/>
+      
           <Outlet />
         </section>
       </main>
