@@ -34,7 +34,7 @@ const Breadcrumb = () => {
                     <span className="px-3 text-body-color dark:text-dark-6">/</span>
                     <li>
                       {isLast ? (
-                        <span className="text-primary dark:text-dark-6">{capitalize(name)}</span>
+                        <span className="text-primary font-medium dark:text-dark-6">{capitalize(name)}</span>
                       ) : (
                         <NavLink to={routeTo} className="hover:text-primary dark:hover:text-primary text-body-color dark:text-white">
                           {capitalize(name)}
