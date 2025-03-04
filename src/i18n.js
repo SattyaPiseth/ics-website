@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
 
-const savedLanguage = localStorage.getItem('i18nextLng') || 'kh';
+const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
 
 i18n
   .use(HttpBackend)
@@ -12,7 +12,7 @@ i18n
           loadPath: '/locales/{{lng}}/{{ns}}.json',  // Note: no './src' or './public'
       },
       lng: savedLanguage,
-      fallbackLng: 'kh',
+      fallbackLng: 'en',
       ns: ['translation'],
       defaultNS: 'translation',
       interpolation: {
