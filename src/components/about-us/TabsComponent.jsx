@@ -23,7 +23,7 @@ const Tab = () => {
 
   return (
     <>
-      <section className="py-14 dark:bg-dark" data-aos="flip-up">
+      <section className="py-24 dark:bg-dark" data-aos="flip-up" id="our-approach_&_missions">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -36,6 +36,7 @@ const Tab = () => {
                         ? "bg-primary text-white shadow"
                         : "text-body-color hover:bg-primary hover:text-white dark:text-dark-6 dark:hover:text-white transition-all"
                     }`}
+                    
                   >
                     Our Approaches
                   </a>

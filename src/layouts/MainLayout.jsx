@@ -6,11 +6,13 @@ import Footer from "../components/FooterComponent";
 import footerData from "./../json/layouts/footer.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useScrollToSection } from "../utils/useScrollToSection";
 
 
 export default function MainLayout() {
 
   useScrollToTop();
+  useScrollToSection();
 
   const location = useLocation();
   useEffect(() => {

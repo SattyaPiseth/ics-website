@@ -17,7 +17,12 @@ import OurProgram from "./components/our-programs/OurProgram.jsx";
 import TrainingProgram from "./components/training-program/TrainingProgram.jsx";
 import ImpactStories from "./components/impact-stories/ImpactStories.jsx";
 import Breadcrumb from "./components/about-us/Breadcrumbs.jsx";
-
+import Mission from "./components/about-us/Mission.jsx";
+import OurHistory from "./components/about-us/OurHistory.jsx";
+import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
+import Tab from "./components/about-us/TabsComponent.jsx";
+import TeamComponent from "./components/about-us/TeamComponent.jsx";
+import FAQComponent from "./components/about-us/FAQComponent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +40,33 @@ const router = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <AboutComponent/>
+        element: <AboutComponent/>,
+        children: [
+          {
+            path: "mission",
+            element: <Mission/>
+          },
+          {
+            path: "our-history",
+            element: <OurHistory/>
+          },
+          {
+            path: "who-we-are",
+            element: <WhoAreWe/>
+          },
+          {
+            path: "our-approach_&_missions",
+            element: <Tab/>
+          },
+          {
+            path: "teams",
+            element: <TeamComponent/>
+          },
+          {
+            path: "faqs",
+            element: <FAQComponent/>
+          }
+        ]
       },
       {
         path: "/contact-us",
