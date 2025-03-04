@@ -22,7 +22,7 @@ import OurHistory from "./components/about-us/OurHistory.jsx";
 import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
 import Tab from "./components/about-us/TabsComponent.jsx";
 import TeamComponent from "./components/about-us/TeamComponent.jsx";
-import FAQComponent from "./components/about-us/FAQComponent.jsx";
+import BrandLogo from "./components/about-us/BrandLogo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,8 +63,8 @@ const router = createBrowserRouter([
             element: <TeamComponent/>
           },
           {
-            path: "faqs",
-            element: <FAQComponent/>
+            path: "partners_&_supporters",
+            element: <BrandLogo/>
           }
         ]
       },

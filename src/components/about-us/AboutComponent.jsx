@@ -6,6 +6,7 @@ import FAQComponent from "./FAQComponent";
 import Mission from "./Mission";
 import OurHistory from "./OurHistory";
 import WhoAreWe from "./WhoAreWe";
+import BrandLogo from "./BrandLogo";
 
 const AboutComponent = () => {
   // Enhanced loaderHTML function with dynamic min and max width parameters
@@ -27,7 +28,7 @@ const AboutComponent = () => {
       <WhoAreWe/>
       <Tab />
       <TeamComponent/>
-      <FAQComponent/>
+      <BrandLogo/>
     </>
   );
 };
