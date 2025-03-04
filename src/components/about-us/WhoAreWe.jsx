@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoAreWe = () => {
   return (
-    <section class="bg-white dark:bg-gray-900 py-10 mt-1" data-aos="fade-right" id="who-we-are">
+    <section class="bg-white dark:bg-gray-900 py-10" data-aos="fade-right" id="who-we-are">
       <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
           <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">

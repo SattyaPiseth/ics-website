@@ -2,7 +2,7 @@ import React from "react";
 
 const OurHistory = ({ourHistory}) => {
   return (
-    <section class="bg-white dark:bg-gray-900 py-10 mt-1" data-aos="fade-down" id="our-history">
+    <section class="bg-white dark:bg-gray-900 py-10" data-aos="fade-down" id="our-history">
       <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
           {/* <img src="./testimonial.png" alt="mockup" /> */}

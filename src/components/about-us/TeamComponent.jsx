@@ -2,7 +2,7 @@ import React from "react";
 
 const TeamComponent = () => {
   return (
-    <section className="pb-10 dark:bg-dark py-24 mt-1" id="teams">
+    <section className="pb-10 dark:bg-dark py-24" id="teams">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
