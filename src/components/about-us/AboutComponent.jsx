@@ -3,6 +3,17 @@ import Breadcrumb from "./Breadcrumbs";
 import Tab from "./TabsComponent";
 
 const AboutComponent = () => {
+  // Enhanced loaderHTML function with dynamic min and max width parameters
+  const loaderHTML = (count, minWidth = 1200, maxWidth = 1480) => {
+    let loaders = "";
+    for (let i = 0; i < count; i++) {
+      const width = Math.floor(Math.random() * (maxWidth - minWidth + 1) + minWidth);
+      loaders += `<div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[${width}px]">&nbsp;</div>`;
+    }
+    return loaders;
+  };
+    // Using dynamic ranges for our history contents
+  const ourHistory = loaderHTML(15, 1200, 1480); 
   return (
     <>
       <Breadcrumb />
@@ -93,40 +104,12 @@ const AboutComponent = () => {
               ></path>
             </svg>
           </div>
-          <div class="mr-auto place-self-center lg:col-span-7">
+          <div class="mr-auto place-self-center lg:col-span-7 w-full">
             <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Our History
             </h2>
             <br />
-            <div class="w-max">
-              <div class="block w-56 h-3 mb-4 font-sans text-5xl animate-pulse antialiased font-semibold leading-tight tracking-normal bg-gray-300 rounded-full text-inherit">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[650px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[650px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[630px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[620px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[640px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[645px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[650px]">
-                &nbsp;
-              </div>
-              <div class="block h-3 mb-4 font-sans text-base antialiased font-light animate-pulse leading-relaxed bg-gray-300 rounded-full text-inherit w-[630px]">
-                &nbsp;
-              </div>
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: ourHistory }}  />
             {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               <span className="font-semibold text-gray-600">Action:</span>{" "}
               identify ways to stop violence in the short-term. We recognize
