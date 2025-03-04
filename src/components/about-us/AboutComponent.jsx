@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumb from "./Breadcrumbs";
 import Tab from "./TabsComponent";
+import TeamComponent from "./TeamComponent";
+import FAQComponent from "./FAQComponent";
 
 const AboutComponent = () => {
   // Enhanced loaderHTML function with dynamic min and max width parameters
@@ -225,6 +227,8 @@ const AboutComponent = () => {
         </div>
       </section>
       <Tab />
+      <TeamComponent/>
+      <FAQComponent/>
     </>
   );
 };
