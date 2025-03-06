@@ -17,25 +17,25 @@ const BrandLogo = () => {
             href="#"
             className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-56"
           >
-            <img className="max-h-full max-w-full p-4" src="./mosvy.jpg" alt="Ministry of Social Affairs Logo" />
+            <img className="max-h-full max-w-full p-4" src="/mosvy.jpg" alt="Ministry of Social Affairs Logo" />
           </a>
           <a
             href="#"
             className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-56"
           >
-            <img className="max-h-full max-w-full p-4" src="./mowa.jpg" alt="Ministry of Women's Affairs Logo" />
+            <img className="max-h-full max-w-full p-4" src="/mowa.jpg" alt="Ministry of Women's Affairs Logo" />
           </a>
           <a
             href="#"
             className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-56"
           >
-            <img className="max-h-full max-w-full p-4" src="./unicef.png" alt="UNICEF Logo" />
+            <img className="max-h-full max-w-full p-4" src="/unicef.png" alt="UNICEF Logo" />
           </a>
           <a
             href="#"
             className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-56"
           >
-            <img className="max-h-full max-w-full p-4" src="./save-the-children.jpg" alt="Save the Children Logo" />
+            <img className="max-h-full max-w-full p-4" src="/save-the-children.jpg" alt="Save the Children Logo" />
           </a>
         </div>
       </div>
