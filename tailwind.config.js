@@ -29,6 +29,10 @@ module.exports = withMT({
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontSize: {
+        '2xs': '.65rem',  // Custom smaller font sizes
+        '3xs': '.5rem'
+      },
       fontFamily: {
         suwannaphum: ["Suwannaphum", "serif"],// Add Moul font
         poppins: ["Poppins", "sans-serif"], // Add Poppins font
