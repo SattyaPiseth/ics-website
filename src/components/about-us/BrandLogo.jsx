@@ -13,30 +13,11 @@ const BrandLogo = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
-          <a
-            href="#"
-            className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-40"
-          >
-            <img className="max-h-full max-w-full p-4" src="/mosvy.jpg" alt="Ministry of Social Affairs Logo" />
-          </a>
-          <a
-            href="#"
-            className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-40"
-          >
-            <img className="max-h-full max-w-full p-4" src="/mowa.jpg" alt="Ministry of Women's Affairs Logo" />
-          </a>
-          <a
-            href="#"
-            className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-40"
-          >
-            <img className="max-h-full max-w-full p-4" src="/unicef.png" alt="UNICEF Logo" />
-          </a>
-          <a
-            href="#"
-            className="flex justify-center items-center border border-solid border-gray-200 shadow-sm rounded-2xl h-40"
-          >
-            <img className="max-h-full max-w-full p-4" src="/save-the-children.jpg" alt="Save the Children Logo" />
-          </a>
+          {["mosvy.jpg", "mowa.jpg", "unicef.png", "save-the-children.jpg"].map((src, index) => (
+            <a key={index} href="#" className="flex justify-center items-center border border-gray-200 shadow-sm rounded-xl overflow-hidden aspect-w-1 aspect-h-1 p-5">
+              <img src={`/${src}`} alt={`${src.split('.')[0]} Logo`} className="object-contain h-full w-full" />
+            </a>
+          ))}
         </div>
       </div>
     </section>
