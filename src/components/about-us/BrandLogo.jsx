@@ -13,7 +13,7 @@ const BrandLogo = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
-          {["mosvy.jpg", "mowa.jpg", "unicef.png", "save-the-children.jpg"].map((src, index) => (
+          {["mosvy.jpg", "mowa.jpg", "unicef.png", "save-the-children.jpg","new-zealand-embassy.png","family-care-first.png","voice.png","raksa-koma.png","world-childhood-foundation.png","exo-foundation.png","ics-driver-of-development.png"].map((src, index) => (
             <a key={index} href="#" className="flex justify-center items-center border border-gray-200 shadow-sm rounded-xl overflow-hidden aspect-w-1 aspect-h-1 p-5">
               <img src={`/${src}`} alt={`${src.split('.')[0]} Logo`} 
               className="object-contain w-full h-48 sm:h-56 md:h-64 xl:h-80 2xl:h-full mx-auto" />
