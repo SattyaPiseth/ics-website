@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const Metadata = ({
-  title = "ICS-SP",
+  title = "Home",
   description = "Parenting is a joyful, frustrating, exhilarating, exhausting journey. The challenge is enormous – to take the hand of a brand-new human being and guide children toward adulthood, teaching them all they need to know to have a happy, successful life. There are times in all parents’ lives when the challenge seems overwhelming. Sometimes we just",
   author = "ICS-SP Team",
   keywords = "parenting, education, child development, skillful parenting",
