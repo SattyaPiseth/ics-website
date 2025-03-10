@@ -23,6 +23,7 @@ import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
 import Tab from "./components/about-us/TabsComponent.jsx";
 import TeamComponent from "./components/about-us/TeamComponent.jsx";
 import BrandLogo from "./components/about-us/BrandLogo.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -95,7 +96,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
+      <HelmetProvider>
       <RouterProvider router={router} />
+      </HelmetProvider>
       <ToastContainer />
     </ThemeProvider>
   </React.StrictMode>

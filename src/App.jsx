@@ -3,13 +3,15 @@ import { CarouselComponent } from "./components/CarouselComponent";
 import HeroSection from "./components/HeroSection";
 import Testimonial from "./components/Testimonial";
 import VideoComponent from "./components/VideoComponent";
-import videoData from './json/layouts/video.json';
+import videoData from "./json/layouts/video.json";
+import Metadata from "./lib/Metadata";
 
 function App() {
   return (
     <>
+      <Metadata />
       <HeroSection />
-      <CarouselComponent/>
+      <CarouselComponent />
       <BlogComponent />
       <Testimonial />
       <section className="container mx-auto py-10dark:bg-dark">
