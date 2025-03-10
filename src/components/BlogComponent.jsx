@@ -57,7 +57,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, url }) => {
       <Link to={url}>
         <div className="mb-10 w-full bg-white rounded-lg shadow-md dark:bg-dark overflow-hidden transition-transform transform hover:scale-105 duration-200">
           <div className="overflow-hidden h-48">
-            <img src={image} alt={CardTitle} className="w-full h-full object-cover" />
+            <img src={image} alt={CardTitle} className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="p-4">
             {date && (

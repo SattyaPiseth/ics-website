@@ -98,6 +98,7 @@ const SingleTestimonial = ({
               src={image}
               alt="testimonial"
               className="w-full rounded-lg shadow-md object-cover"
+              loading="lazy"
             />
             <span className="absolute -left-6 -top-6 z-[-1] hidden sm:block">
               <DotShape />
@@ -125,6 +126,7 @@ const SingleTestimonial = ({
                   src={reviewImg}
                   alt={reviewAlt}
                   className="rounded-md w-1/5 h-auto"
+                  loading="lazy"
                 />
               </div>
               <p className="mb-11 text-base font-normal italic leading-[1.81] text-body-color dark:text-dark-6 sm:text-[22px]">

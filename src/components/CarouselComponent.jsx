@@ -56,6 +56,7 @@ export function CarouselComponent() {
               alt={`Image ${index + 1}`}
               className="h-full w-full sm:object-none md:object-cover " // Ensures the image covers the carousel
               style={{ transition: "opacity 0.5s ease" }}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/75 flex items-end justify-center p-4">
               <div className="min-w-[280px] max-w-md md:max-w-lg lg:max-w-xl mx-auto w-full text-center">

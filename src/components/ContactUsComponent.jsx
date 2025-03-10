@@ -11,7 +11,7 @@ const ContactUsComponent = () => {
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 lg:w-8/12">
             <div class="relative mb-8 h-[370px] md:h-[480px]">
-              <img src="./about-us.JPG" alt="product" class="h-full w-full object-cover object-center"/>
+              <img src="./about-us.JPG" alt="product" class="h-full w-full object-cover object-center" loading="lazy"/>
 
               {/* <div class="absolute left-0 top-0 flex h-full w-full items-center px-8 md:px-12">
                 <div class="max-w-[420px]">
@@ -36,7 +36,7 @@ const ContactUsComponent = () => {
             <div class="-mx-4 flex flex-wrap">
               <div class="w-full px-4 md:w-1/2 lg:w-full">
                 <div class="relative mb-8 h-[223px]">
-                  <img src="./about-us-2.JPG" alt="product" class="h-full w-full object-cover object-center"/>
+                  <img src="./about-us-2.JPG" alt="product" class="h-full w-full object-cover object-center" loading="lazy"/>
 
                   {/* <div class="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
                     <div class="max-w-[180px] text-right">
@@ -54,7 +54,7 @@ const ContactUsComponent = () => {
               </div>
               <div class="w-full px-4 md:w-1/2 lg:w-full">
                 <div class="relative mb-8 h-[223px]">
-                  <img src="./about-us-3.JPG" alt="product" class="h-full w-full object-cover object-center"/>
+                  <img src="./about-us-3.JPG" alt="product" class="h-full w-full object-cover object-center" loading="lazy"/>
 
                   {/* <div class="absolute left-0 top-0 flex h-full w-full items-end justify-end p-6 sm:p-9">
                     <div class="max-w-[180px] text-right">
