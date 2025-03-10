@@ -11,6 +11,12 @@
       media="print"
       onload="this.media='all'"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="preload" href="about-us.JPG" as="image" />
     <link rel="preload" href="about-us-2.JPG" as="image" />
     <link rel="preload" href="about-us-3.JPG" as="image" />
@@ -35,7 +41,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" defer></script>
     <script
       type="module"
       src="/node_modules/pagedone/src/js/pagedone.js"
