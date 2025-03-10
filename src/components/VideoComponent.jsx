@@ -35,7 +35,7 @@ export default function VideoComponent({ src, title, description, date }) {
           <h3 className="mb-2 text-xl font-semibold text-gray-900 hover:text-primary dark:text-white sm:text-2xl">
             {title}
           </h3>
-          <p className="text-base text-gray-700 dark:text-gray-300 max-h-24 overflow-auto scrollbar-thin scrollbar-thumb-secondary-color scrollbar-track-transparent scroll-smooth">
+          <p className="text-base text-gray-700 dark:text-gray-300 max-h-24 overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent scroll-smooth">
             {description}
           </p>
         </div>
