@@ -115,11 +115,13 @@ const LogoAndContact = memo(() => {
             src={ics_logo}
             alt={t("footer.altLogo")}
             className="max-w-full dark:hidden h-auto"
+            loading="lazy"
           />
           <img
             src={t("footer.logoDark")}
             alt={t("footer.altLogo")}
             className="max-w-full hidden dark:block h-auto"
+            loading="lazy"
           />
         </NavLink>
         <p className="mb-7 text-base text-body-color dark:text-dark-6 text-center sm:text-left md:text-center lg:text-left">

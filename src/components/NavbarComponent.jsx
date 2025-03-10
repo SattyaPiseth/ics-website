@@ -27,11 +27,13 @@ export default function NavbarComponent() {
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo"
                   className="w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300 dark:hidden"
+                  loading="lazy"
                 />
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo (Dark Mode)"
                   className="hidden dark:block w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300"
+                  loading="lazy"
                 />
               </NavLink>
             </div>

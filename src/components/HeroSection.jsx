@@ -146,11 +146,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-const SingleImage = ({ href, imgSrc, alt }) => {
-  return (
-    <a href={href} className="flex w-full items-center justify-center">
-      <img src={imgSrc} alt={alt} className="h-auto w-full" />
-    </a>
-  );
-};
