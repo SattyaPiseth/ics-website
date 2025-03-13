@@ -10,39 +10,20 @@ import { ToastContainer } from "react-toastify";
 import App from "./App";
 import "./i18n.js";
 import blogData from "./json/layouts/blog_details.json";
-
 import { HelmetProvider } from "react-helmet-async";
-import { lazy } from "react";
-
-const BlogDetailsComponent = lazy(() =>
-  import("./components/BlogDetailsComponent.jsx")
-);
-const AboutComponent = lazy(() =>
-  import("./components/about-us/AboutComponent.jsx")
-);
-const ContactUsComponent = lazy(() =>
-  import("./components/ContactUsComponent.jsx")
-);
-const OurProgram = lazy(() =>
-  import("./components/our-programs/OurProgram.jsx")
-);
-const TrainingProgram = lazy(() =>
-  import("./components/training-program/TrainingProgram.jsx")
-);
-const ImpactStories = lazy(() =>
-  import("./components/impact-stories/ImpactStories.jsx")
-);
-const Breadcrumb = lazy(() => import("./components/about-us/Breadcrumbs.jsx"));
-
-// Lazy-load about-us children pages
-const Mission = lazy(() => import("./components/about-us/Mission.jsx"));
-const OurHistory = lazy(() => import("./components/about-us/OurHistory.jsx"));
-const WhoAreWe = lazy(() => import("./components/about-us/WhoAreWe.jsx"));
-const Tab = lazy(() => import("./components/about-us/TabsComponent.jsx"));
-const TeamComponent = lazy(() =>
-  import("./components/about-us/TeamComponent.jsx")
-);
-const BrandLogo = lazy(() => import("./components/about-us/BrandLogo.jsx"));
+import BlogDetailsComponent from "./components/BlogDetailsComponent.jsx";
+import AboutComponent from "./components/about-us/AboutComponent.jsx";
+import ContactUsComponent from "./components/ContactUsComponent.jsx";
+import OurProgram from "./components/our-programs/OurProgram.jsx";
+import TrainingProgram from "./components/training-program/TrainingProgram.jsx";
+import ImpactStories from "./components/impact-stories/ImpactStories.jsx";
+import Breadcrumb from "./components/about-us/Breadcrumbs.jsx";
+import Mission from "./components/about-us/Mission.jsx";
+import OurHistory from "./components/about-us/OurHistory.jsx";
+import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
+import Tab from "./components/about-us/TabsComponent.jsx";
+import TeamComponent from "./components/about-us/TeamComponent.jsx";
+import BrandLogo from "./components/about-us/BrandLogo.jsx";
 
 const router = createBrowserRouter([
   {
