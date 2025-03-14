@@ -1,23 +1,23 @@
 import React from "react";
 import Breadcrumb from "../about-us/Breadcrumbs";
-import { NavLink } from "react-router-dom";
+import FeaturesSection from "./FeatureComponent";
 
 const OurProgram = () => {
   return (
     <section>
       <Breadcrumb />
       {/* <!-- Hero Section --> */}
-      <section className="relative bg-blue-600 text-white py-20 text-center">
+      {/* <section className="relative bg-blue-600 text-white py-20 text-center">
         <h1 className="text-4xl font-bold">Our Programs</h1>
         <p className="text-lg mt-2">
           Empowering communities through education and support
         </p>
-      </section>
+      </section> */}
 
       {/* <!-- Programs Grid Section --> */}
-      <section className="container mx-auto py-12 px-4">
+      {/* <section className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* <!-- Program Card --> */}
+          
           <div className="bg-white shadow-lg p-6 rounded-lg">
             <h2 className="text-xl font-semibold">Supportive Parenting</h2>
             <p className="text-gray-600 mt-2">
@@ -27,13 +27,11 @@ const OurProgram = () => {
               Read More →
             </a>
           </div>
-
-          {/* <!-- Repeat for other programs --> */}
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Call to Action --> */}
-      <section className="bg-gray-100 py-10 text-center">
+      {/* <section className="bg-gray-100 py-10 text-center">
         <h2 className="text-2xl font-semibold">Want to Get Involved?</h2>
         <NavLink
           to={"/contact-us"}
@@ -41,7 +39,8 @@ const OurProgram = () => {
         >
           Contact Us
         </NavLink>
-      </section>
+      </section> */}
+      <FeaturesSection/>
     </section>
   );
 };

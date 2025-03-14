@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Skillful Parenting",
+      "description": "A holistic program that reinforces positive parenting practices, empowering caregivers to promote child well-being, strengthen family relationships, and reduce stress through peer-group discussions.",
+      "icon": "MdFamilyRestroom"
+    },
+    {
+      "id": 2,
+      "title": "Financial Literacy and Economic Empowerment",
+      "description": "Equips families with practical financial knowledge, focusing on budgeting, debt management, savings, and improving financial communication within households.",
+      "icon": "FaSackDollar"
+    },
+    {
+      "id": 3,
+      "title": "Youth Empowerment",
+      "description": "Prepares young people for the future by developing leadership, career, and life skills, promoting confidence and resilience.",
+      "icon": "IoIosPeople"
+    },
+    {
+      "id": 4,
+      "title": "Ending Violence against Women & Girls (VAWG)",
+      "description": "Raises awareness, empowers women and girls, and engages communities in preventing and addressing gender-based violence.",
+      "icon": "TfiHandStop"
+    }
+  ]
+  
