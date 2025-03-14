@@ -2,7 +2,7 @@ import React from "react";
 
 const KeyStatisticComponent = () => {
   return (
-    <section className="py-20 w-full container">
+    <section className="py-20 w-full container" data-aos="flip-down">
       <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl py-10 px-10 xl:py-16 xl:px-20 bg-gray-50 flex items-center justify-between flex-col gap-16 lg:flex-row w-full">
           <div className="w-full lg:w-60">
