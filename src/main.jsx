@@ -24,6 +24,7 @@ import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
 import Tab from "./components/about-us/TabsComponent.jsx";
 import TeamComponent from "./components/about-us/TeamComponent.jsx";
 import BrandLogo from "./components/about-us/BrandLogo.jsx";
+import GetInvolved from "./components/get-involved/GetInvolved.jsx";
 
 const router = createBrowserRouter([
   {
@@ -75,7 +76,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/get_involved",
-        element: <Breadcrumb />,
+        element: <GetInvolved/>,
       },
       {
         path: "/our-programs",
