@@ -1,6 +1,7 @@
 import BlogComponent from "./components/BlogComponent";
 import { CarouselComponent } from "./components/CarouselComponent";
 import HeroSection from "./components/HeroSection";
+import KeyStatisticComponent from "./components/KeyStatisticComponent";
 import Testimonial from "./components/Testimonial";
 import VideoComponent from "./components/VideoComponent";
 import videoData from "./json/layouts/video.json";
@@ -12,6 +13,7 @@ function App() {
       <Metadata />
       <HeroSection />
       <CarouselComponent />
+      <KeyStatisticComponent/>
       <BlogComponent />
       <Testimonial />
       <section className="container mx-auto py-10dark:bg-dark">
