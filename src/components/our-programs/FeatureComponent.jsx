@@ -29,7 +29,7 @@ const FeaturesSection = () => {
         <div className="mb-10 lg:mb-16 flex justify-center items-center flex-col lg:flex-row lg:justify-between">
           <div className="relative w-full text-center lg:text-left lg:w-2/4">
             <h2 className="text-4xl font-bold text-gray-900 leading-[3.25rem] lg:mb-6">
-              Our Key Programs
+              Key Programs
             </h2>
           </div>
           <div className="relative w-full text-center lg:text-left lg:w-2/4">
