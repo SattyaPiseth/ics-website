@@ -32,7 +32,7 @@ const FeaturesSection = () => {
               <h2 className="text-4xl font-bold text-gray-900 leading-[3.25rem] lg:mb-6">
                 Key Programs
               </h2>
-              <p className="text-lg font-normal text-gray-500 mb-5 py-5 text-justify">
+              <p className="text-lg font-normal text-gray-500 mb-5 py-5 text-justify xl:text-xl">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
                 natus tenetur pariatur ad recusandae illum est eos! Vero, modi
                 consequatur? Facilis, doloremque. Facere nobis nostrum debitis
@@ -95,18 +95,14 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section
-        class="bg-white dark:bg-gray-900 py-10"
-       
-        id="mission"
-      >
+      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
         <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
             <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Skillful Parenting
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -139,11 +135,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section
-        class="bg-white dark:bg-gray-900 py-10"
-   
-        id="mission"
-      >
+      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
         <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
@@ -166,7 +158,7 @@ const FeaturesSection = () => {
               Financial Literacy and Economic Empowerment
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -183,18 +175,14 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section
-        class="bg-white dark:bg-gray-900 py-10"
-    
-        id="mission"
-      >
+      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
         <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
             <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Youth Empowerment
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -227,11 +215,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section
-        class="bg-white dark:bg-gray-900 py-10"
- 
-        id="mission"
-      >
+      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
         <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
@@ -254,7 +238,7 @@ const FeaturesSection = () => {
               Ending Violence against women & girl (VAWG)
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
