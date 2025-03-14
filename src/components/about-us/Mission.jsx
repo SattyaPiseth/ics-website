@@ -1,33 +1,37 @@
-import React from 'react'
+import React from "react";
 
 const Mission = () => {
   return (
-    <section class="bg-white dark:bg-gray-900 py-10" data-aos="fade-up" id='mission'>
-        <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-              Mission
-            </h2>
-            <br />
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              <span className="font-semibold text-gray-600">Action:</span>{" "}
-              identify ways to stop violence in the short-term. We recognize
-              that it does not have expertise or resource, but should liaise
-              with other organizations specialized in violence, hospitals,
-              police, local authorities to find short-term solutions and protect
-              the victims of violence,
-              <br /> <br />
-              <span className="font-semibold text-gray-600">
-                Preventation:
-              </span>{" "}
-              changing behaviors in a sustainable way as well as challenging the
-              cultural acceptation of violence. This is where the Skillful
-              positive parenting program has a major role to play, especially if
-              it is accompanied by awareness campaigns on the negative
-              consequences of violence, and the root causes of violence in
-              families (alcohol, lack of income…).
-            </p>
-            {/* <a
+    <section
+      class="bg-white dark:bg-gray-900 py-10"
+      data-aos="fade-up"
+      id="mission"
+    >
+      <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            Mission
+          </h2>
+          <br />
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <span className="font-semibold text-gray-600">Action:</span>{" "}
+            identify ways to stop violence in the short-term. We recognize that
+            it does not have expertise or resource, but should liaise with other
+            organizations specialized in violence, hospitals, police, local
+            authorities to find short-term solutions and protect the victims of
+            violence,
+            <br /> <br />
+            <span className="font-semibold text-gray-600">
+              Preventation:
+            </span>{" "}
+            changing behaviors in a sustainable way as well as challenging the
+            cultural acceptation of violence. This is where the Skillful
+            positive parenting program has a major role to play, especially if
+            it is accompanied by awareness campaigns on the negative
+            consequences of violence, and the root causes of violence in
+            families (alcohol, lack of income…).
+          </p>
+          {/* <a
               href="#"
               class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-dark"
             >
@@ -51,26 +55,26 @@ const Mission = () => {
             >
               Speak to Sales
             </a> */}
-          </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="w-10/12 text-gray-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-              ></path>
-            </svg>
-          </div>
         </div>
-      </section>
-  )
-}
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-10/12 text-gray-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Mission
+export default Mission;
