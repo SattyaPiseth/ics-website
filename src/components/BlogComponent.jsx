@@ -57,7 +57,12 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, url }) => {
       <Link to={url}>
         <div className="mb-10 w-full bg-white rounded-lg shadow-md dark:bg-dark overflow-hidden transition-transform transform hover:scale-105 duration-200">
           <div className="overflow-hidden h-48">
-            <img src={image} alt={CardTitle} className="w-full h-full object-cover" loading="lazy" />
+            <img
+              src={image}
+              alt={CardTitle}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
           <div className="p-4">
             {date && (
@@ -68,7 +73,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, url }) => {
             <h3 className="mb-2 text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl line-clamp-3">
               {CardTitle}
             </h3>
-            <p className="text-base text-body-color dark:text-dark-6 line-clamp-4">
+            <p className="text-base text-body-color dark:text-dark-6 max-h-32 overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent scroll-smooth ">
               {CardDescription}
             </p>
           </div>
