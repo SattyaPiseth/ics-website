@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DropdownComponent from "./DropdownComponent";
-import ics_logo from "/ics_logo.webp";
+import ics_logo from "/ics_logo.avif";
 import TranslateButton from "./TranslateButton";
 import { useTranslation } from "react-i18next";
 import useFontClass from "../utils/useFontClass";
