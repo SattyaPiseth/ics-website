@@ -4,9 +4,10 @@ const flowbite = require("flowbite-react/tailwind");
 
 module.exports = withMT({
   darkMode: "class", // enables class-based dark mode
-  content: ["./index.html", 
-    "./src/**/*.{js,ts,jsx,tsx,vue}",
-    flowbite.content(),
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx,vue}", // Ensure all files are included
+    "node_modules/flowbite-react/**/*.js", // Ensure Flowbite components are scanned
   ],
   theme: {
     screens: {
@@ -59,7 +60,7 @@ module.exports = withMT({
   plugins: [
     require("tailgrids/plugin"),
     require("@tailwindcss/line-clamp"),
-    require("tailwind-scrollbar"), // Add the line-clamp plugin
+    require("tailwind-scrollbar"),
     flowbite.plugin(),
   ],
 });
