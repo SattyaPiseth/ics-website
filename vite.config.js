@@ -6,12 +6,8 @@ import { visualizer } from 'rollup-plugin-visualizer'
 export default defineConfig({
   plugins: [
     react(),
-    viteCompression({
-      algorithm: 'brotliCompress', // Use Brotli instead of Gzip (better compression)
-      ext: '.br', 
-      deleteOriginFile: false, // Keeps original file alongside compressed
-    }),
-    visualizer({ open: true }) // Optional: Generates bundle size report
+    viteCompression({ algorithm: 'gzip' }), // Enables gzip compression for assets
+    visualizer({ open: true }) // Optional: Generates a visualization of bundle size
   ],
   server: {
     port: 3000,
@@ -21,19 +17,17 @@ export default defineConfig({
   },
   build: {
     target: 'esnext', // Optimize for modern browsers
-    minify: 'esbuild', // Minifies JS for better execution
+    minify: 'esbuild', // Minifies JS for faster execution
     chunkSizeWarningLimit: 500, // Reduce chunk size warning
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) return 'react-vendor' // Splitting React-related packages
-            if (id.includes('lodash')) return 'lodash-vendor' // Splitting lodash
-            return 'vendor' // Other third-party dependencies
+            return 'vendor' // Separates vendor libraries into a different chunk
           }
-        },
-      },
-    },
+        }
+      }
+    }
   },
   resolve: {
     alias: {
@@ -42,9 +36,5 @@ export default defineConfig({
   },
   esbuild: {
     drop: ['console', 'debugger'], // Removes console logs & debuggers in production
-  },
-  optimizeDeps: {
-    include: ['react', 'react-dom'], // Optimizes dependencies at startup
-  },
-  cacheDir: '.vite_cache', // Ensures persistent caching for faster builds
+  }
 })
