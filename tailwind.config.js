@@ -3,7 +3,6 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 const flowbite = require("flowbite-react/tailwind");
 
 module.exports = withMT({
-  mode: "jit", // Enables Just-In-Time compilation for better performance
   darkMode: "class", // enables class-based dark mode
   content: ["./index.html", 
     "./src/**/*.{js,ts,jsx,tsx,vue}",
