@@ -11,9 +11,9 @@ export default function NavbarComponent() {
   const { fontClass } = useFontClass();
   const location = useLocation();
 
-  useEffect(()=>{
+  useEffect(() => {
     setOpen(false);
-  },[location])
+  }, [location]);
 
   return (
     <header className="sticky top-0 z-50" role="banner">
@@ -21,23 +21,24 @@ export default function NavbarComponent() {
         <div className="container mx-auto">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-96 px-4">
-
               <NavLink to="/" className="block w-full py-5" aria-label="Logo">
                 <img
                   src={ics_logo}
                   alt="ICS Skillful Parenting Logo"
+                  width="240"
+                  height="80" // Set the actual dimensions of the logo
                   className="w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300 dark:hidden"
                   loading="eager"
-            
                 />
+
                 <img
                   src={ics_logo}
-                  alt="ICS Skillful Parenting Logo (Dark Mode)"
+                  alt="ICS Skillful Parenting Logo"
+                  width="240"
+                  height="80" // Set the actual dimensions of the logo
                   className="hidden dark:block w-44 sm:w-52 md:w-60 xl:w-80 transition-all duration-300"
                   loading="eager"
-             
                 />
-        
               </NavLink>
             </div>
             <div
@@ -105,8 +106,7 @@ export default function NavbarComponent() {
                   <ul className="block lg:flex whitespace-nowrap border sm:border-transparent rounded-lg">
                     <li className="group relative hidden 2xl:block">
                       <NavLink
-                      to={"about-us"}
-                     
+                        to={"about-us"}
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {/* {navbarData?.about?.title} */}
@@ -138,21 +138,20 @@ export default function NavbarComponent() {
                         })}
                       />
                     </ul>
-                    
+
                     <li className="group relative hidden 2xl:block">
                       <NavLink
-                      to={"contact-us"}
+                        to={"contact-us"}
                         className="flex py-2 justify-center text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
                         {`${t("contact.title")}`}
                       </NavLink>
                     </li>
                     <li className="group relative hidden 2xl:block">
-                      <NavLink to={"get_involved"}
-                       
+                      <NavLink
+                        to={"get_involved"}
                         className="flex py-2 justify-center text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base font-medium text-body-color hover:text-dark lg:ml-6 lg:inline-flex lg:w-auto lg:justify-center dark:text-dark-6 dark:hover:text-white uppercase group-hover:bg-primary/5 group-hover:text-primary dark:group-hover:bg-dark-2 dark:group-hover:text-white lg:px-1.5 xl:px-3 rounded-lg"
                       >
-                      
                         {`${t("getInvolved.title")}`}
                       </NavLink>
                     </li>
