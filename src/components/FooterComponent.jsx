@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { useTranslation } from "react-i18next";
 import SocialMediaFollow from "./SocialMediaFollow";
-import ics_logo from "/ics_logo.webp";
+import ics_logo from "/ics_logo.avif";
 import useFontClass from "../utils/useFontClass";
 import { NavLink } from "react-router-dom";
 
