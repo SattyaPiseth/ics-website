@@ -37,6 +37,7 @@ export default function NavbarComponent() {
                   loading="eager"
                   fetchPriority="high"
                 />
+                {/*  */}
               </NavLink>
             </div>
             <div
