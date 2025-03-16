@@ -42,6 +42,7 @@ const Testimonial = () => {
           <button
             className="prev-arrow cursor-pointer h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none hidden md:flex"
             onClick={handlePrev}
+            aria-label="Previous Testimonial"
           >
             <svg
               width="20"
@@ -60,6 +61,7 @@ const Testimonial = () => {
           <button
             className="next-arrow cursor-pointer h-14 w-14 items-center justify-center rounded-full border border-stroke bg-white text-dark transition-all hover:border-transparent hover:drop-shadow-testimonial dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:hover:drop-shadow-none hidden md:flex"
             onClick={handleNext}
+            aria-label="Next Testimonial"
           >
             <svg
               width="20"
