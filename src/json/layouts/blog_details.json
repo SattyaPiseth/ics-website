@@ -3,7 +3,7 @@
   "author": "Prak Sopheap",
   "date": "2024-12-04",
   "readTime": "8 mins read",
-  "featuredImage": "./blog-details_03.JPG",
+  "featuredImage": "./blog-details_03.webp",
   "featuredImageCaption": "Prak Sopheap, Project Coordinator, leading a training session.",
   "sections": [
     {
@@ -13,7 +13,7 @@
       ],
       "images": [
         {
-          "src": "./blog-details_01.jpg",
+          "src": "./blog-details_01.webp",
           "caption": "Take a souvenir photo"
         }
       ]
@@ -26,7 +26,7 @@
       ],
       "images": [
         {
-          "src": "./blog-details_02.JPG",
+          "src": "./blog-details_02.webp",
           "caption": "Mentoring sessions provide facilitators with ongoing support."
         }
       ]

@@ -17,7 +17,6 @@ import ContactUsComponent from "./components/ContactUsComponent.jsx";
 import OurProgram from "./components/our-programs/OurProgram.jsx";
 import TrainingProgram from "./components/training-program/TrainingProgram.jsx";
 import ImpactStories from "./components/impact-stories/ImpactStories.jsx";
-import Breadcrumb from "./components/about-us/Breadcrumbs.jsx";
 import Mission from "./components/about-us/Mission.jsx";
 import OurHistory from "./components/about-us/OurHistory.jsx";
 import WhoAreWe from "./components/about-us/WhoAreWe.jsx";
