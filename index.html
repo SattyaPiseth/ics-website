@@ -2,22 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ics_image.png" />
+    <link rel="icon" type="image/svg+xml" href="/ics_image.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICS-SP</title>
-    <link
-      rel="stylesheet"
-      href="/node_modules/pagedone/src/css/pagedone.css"
-      media="print"
-      onload="this.media='all'"
-    />
+
+    <!-- Preconnect to External Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      media="print"
+      onload="this.onload=null;this.media='all';"
     />
 
+    <!-- Critical CSS: Inline for Faster First Contentful Paint (FCP) -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-display: swap;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <!-- Preload Only Critical Images -->
     <link rel="preload" href="about-us.webp" as="image" />
     <link rel="preload" href="about-us-2.webp" as="image" />
     <link rel="preload" href="about-us-3.webp" as="image" />
@@ -39,6 +54,14 @@
     <link rel="preload" href="world-childhood-foundation.png" as="image" />
     <link rel="preload" href="exo-foundation.png" as="image" />
     <link rel="preload" href="ics-driver-of-development.png" as="image" />
+
+    <!-- Asynchronous CSS Load (Non-Blocking) -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/pagedone/src/css/pagedone.css"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
   <body>
     <div id="root"></div>
@@ -47,6 +70,7 @@
       type="module"
       src="/node_modules/pagedone/src/js/pagedone.js"
       defer
+      async
     ></script>
   </body>
 </html>
