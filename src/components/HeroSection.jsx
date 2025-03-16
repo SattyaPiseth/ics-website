@@ -97,6 +97,8 @@ const HeroSection = () => {
                   alt="hero"
                   className="max-w-full lg:ml-auto rounded-lg"
                   data-aos="flip-left"
+                  width={736}
+                  height={491}
                   loading="lazy"
                 />
                 {/* SVG Background */}
