@@ -6,8 +6,8 @@ const Metadata = ({
   description = "Parenting is a joyful, frustrating, exhilarating, exhausting journey. The challenge is enormous – to take the hand of a brand-new human being and guide children toward adulthood, teaching them all they need to know to have a happy, successful life. There are times in all parents’ lives when the challenge seems overwhelming. Sometimes we just",
   author = "ICS-SP Team",
   keywords = "parenting, education, child development, skillful parenting",
-  thumbnail = "https://ics-skillfulparenting.org/wp-content/uploads/2023/02/cropped-Logo-512-512-Pixel.png",
-  url = "https://ics-skillfulparenting.org/",
+  thumbnail = "https://ics.techinsights.guru/ics_image.webp",
+  url = "https://ics.techinsights.guru/",
   type = "website"
 }) => {
   return (
