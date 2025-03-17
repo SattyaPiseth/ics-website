@@ -31,37 +31,33 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/ics_image.png" />
 
-    <!-- Preconnect for Faster Resource Fetching -->
+    <!-- Preconnect for Faster Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Preload Google Fonts -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-    />
+    <!-- Load Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      media="print"
-      onload="this.media='all'"
     />
 
     <!-- Preload Important Images -->
     <link rel="preload" href="/ics_image.webp" as="image" type="image/webp" />
     <link rel="preload" href="/ics_logo.avif" as="image" type="image/avif" />
 
-    <!-- Load Pagedone via CDN or from public/ -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/pagedone@latest/dist/pagedone.min.js"
-      defer
-    ></script>
+    <!-- Stylesheets (Defer Non-Critical) -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/pagedone/src/css/pagedone.css"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
   <body>
     <div id="root"></div>
 
     <!-- Load React App -->
     <script type="module" src="/src/main.jsx" defer></script>
+    <script src="node_modules/pagedone/src/js/pagedone.js" defer></script>
   </body>
 </html>
