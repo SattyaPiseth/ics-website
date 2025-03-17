@@ -52,25 +52,16 @@
     <link rel="preload" href="/ics_image.webp" as="image" type="image/webp" />
     <link rel="preload" href="/ics_logo.avif" as="image" type="image/avif" />
 
-    <!-- Stylesheets (Defer Non-Critical) -->
-    <link
-      rel="stylesheet"
-      href="/node_modules/pagedone/src/css/pagedone.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="/node_modules/pagedone/src/css/pagedone.css"
-      />
-    </noscript>
+    <!-- Load Pagedone via CDN or from public/ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/pagedone@latest/dist/pagedone.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <div id="root"></div>
 
     <!-- Load React App -->
     <script type="module" src="/src/main.jsx" defer></script>
-    <script src="node_modules/pagedone/src/js/pagedone.js" defer></script>
   </body>
 </html>

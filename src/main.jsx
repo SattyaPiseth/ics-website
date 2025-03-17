@@ -75,7 +75,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/get_involved",
-        element: <GetInvolved/>,
+        element: <GetInvolved />,
       },
       {
         path: "/our-programs",
