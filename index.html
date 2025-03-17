@@ -31,14 +31,21 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/ics_image.png" />
 
-    <!-- Preconnect for Faster Font Loading -->
+    <!-- Preconnect for Faster Resource Fetching -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Load Google Fonts -->
+    <!-- Preload Google Fonts -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- Preload Important Images -->
@@ -52,6 +59,12 @@
       media="print"
       onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="/node_modules/pagedone/src/css/pagedone.css"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Moul&family=Poppins:wght@300;400;500;700&family=Suwannaphum:wght@400;700&display=swap');
 
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
