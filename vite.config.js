@@ -4,6 +4,7 @@ import viteCompression from 'vite-plugin-compression'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
+  base: "./",  // Ensures correct asset loading
   plugins: [
     react(),
     viteCompression({ algorithm: 'gzip' }), // Enables gzip compression for assets
