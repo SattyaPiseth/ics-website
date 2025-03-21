@@ -1,0 +1,30 @@
+{
+  "title": "Training Service",
+  "description": " We offer a range of training programs to help individuals, families, and organizations build essential skills for success. Our workshops are designed to empower participants with practical knowledge and tools that can be applied in everyday life. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit dolor perferendis veritatis aspernatur repellat, voluptatibus recusandae vitae aperiam aliquid repellendus alias nihil vero quia ipsa quo aut officia. Magni? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit pariatur fuga, nostrum cum, ab quis adipisci deserunt numquam modi quisquam dignissimos maxime eos nesciunt aliquam ipsa, nobis laboriosam nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus autem ducimus quasi impedit minima iure, obcaecati consequatur eaque delectus repellendus laboriosam! Libero explicabo veritatis molestiae eveniet eaque corrupti? Enim, officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit dolor perferendis veritatis aspernatur repellat, voluptatibus recusandae vitae aperiam aliquid repellendus alias nihil vero quia ipsa quo aut officia. Magni? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit pariatur fuga, nostrum cum, ab quis adipisci deserunt numquam modi quisquam dignissimos maxime eos nesciunt aliquam ipsa, nobis laboriosam nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus autem ducimus quasi impedit minima iure, obcaecati consequatur eaque delectus repellendus laboriosam! Libero explicabo veritatis molestiae eveniet eaque corrupti? Enim, officia?",
+  "features" : [
+    {
+      "id": 1,
+      "title": "Parenting & Caregiver Training",
+      "description": "Hands-on sessions to help caregivers practice positive discipline, communication, and non-violent parenting techniques.",
+      "icon": "MdFamilyRestroom"
+    },
+    {
+      "id": 2,
+      "title": "Financial Literacy Training",
+      "description": "Essential skills for budgeting, saving, and financial planning to empower individuals and families.",
+      "icon": "FaSackDollar"
+    },
+    {
+      "id": 3,
+      "title": "Youth Entrepreneurship Training",
+      "description": "Helping young people start and sustain small businesses through innovation, financial management, and leadership skills.",
+      "icon": "IoIosPeople"
+    },
+    {
+      "id": 4,
+      "title": "Custom Training for NGOs, Schools & Businesses",
+      "description": "Tailored workshops on parenting, financial literacy, and youth empowerment, designed to meet specific organizational needs.",
+      "icon": "TfiHandStop"
+    }
+  ]
+}

@@ -95,14 +95,14 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
-        <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+      <section className="bg-white dark:bg-gray-900 py-10" id="mission">
+        <div className="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h2 className="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Skillful Parenting
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -117,14 +117,14 @@ const FeaturesSection = () => {
               officia?
             </p>
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-10/12 text-gray-500"
+              className="w-10/12 text-gray-500"
             >
               <path
                 stroke-linecap="round"
@@ -135,16 +135,16 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
-        <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
+      <section className="bg-white dark:bg-gray-900 py-10" id="mission">
+        <div className="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-10/12 text-gray-500"
+              className="w-10/12 text-gray-500"
             >
               <path
                 stroke-linecap="round"
@@ -153,12 +153,12 @@ const FeaturesSection = () => {
               ></path>
             </svg>
           </div>
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h2 className="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Financial Literacy and Economic Empowerment
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -175,14 +175,14 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
-        <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+      <section className="bg-white dark:bg-gray-900 py-10" id="mission">
+        <div className="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h2 className="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Youth Empowerment
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
@@ -197,14 +197,14 @@ const FeaturesSection = () => {
               officia?
             </p>
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-10/12 text-gray-500"
+              className="w-10/12 text-gray-500"
             >
               <path
                 stroke-linecap="round"
@@ -215,16 +215,16 @@ const FeaturesSection = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white dark:bg-gray-900 py-10" id="mission">
-        <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
+      <section className="bg-white dark:bg-gray-900 py-10" id="mission">
+        <div className="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex w-10/12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-10/12 text-gray-500"
+              className="w-10/12 text-gray-500"
             >
               <path
                 stroke-linecap="round"
@@ -233,12 +233,12 @@ const FeaturesSection = () => {
               ></path>
             </svg>
           </div>
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h2 className="max-w-2xl mb-4 text-3xl font-bold text-gray-900 tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
               Ending Violence against women & girl (VAWG)
             </h2>
             <br />
-            <p class="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-normal text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               odit dolor perferendis veritatis aspernatur repellat, voluptatibus
               recusandae vitae aperiam aliquid repellendus alias nihil vero quia
