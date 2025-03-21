@@ -1,0 +1,60 @@
+{
+    "currentProjects": [
+      {
+        "title": "Project Name 1",
+        "description": "Description of the project and its objectives. It aims to make a significant impact on the community.",
+        "fundingPartner": "Partner Name",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Project Name 2",
+        "description": "Description of the project with more emphasis on its impact and community benefits.",
+        "fundingPartner": "Partner Name",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Project Name 3",
+        "description": "Another description that details the objectives and outreach of the project.",
+        "fundingPartner": "Partner Name",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      }
+    ],
+    "pastProjects": [
+      {
+        "title": "Past Project 1",
+        "description": "A summary of the project and its major accomplishments, helping the community progress.",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Past Project 2",
+        "description": "An impactful project that brought positive change to the targeted community.",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Past Project 3",
+        "description": "Highlights of the project’s achievements, showcasing its lasting impact.",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Report Title 1",
+        "description": "A brief summary of the report’s findings, focusing on key recommendations and outcomes.",
+        "link": "#",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Report Title 2",
+        "description": "Overview of the report’s focus areas and its relevance to the community development efforts.",
+        "link": "#",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      },
+      {
+        "title": "Report Title 3",
+        "description": "Insights and analysis provided in this report, contributing to the organization’s future strategies.",
+        "link": "#",
+        "image": "https://ics-skillfulparenting.org/wp-content/uploads/2023/04/International-womens-day-1-copy-e1681269386306.png"
+      }
+    ]
+  }
+  
